@@ -1,7 +1,10 @@
 ﻿<Solution>
+  <Project Path="Piglet.csproj" />
   <Project Path="NonConvexEditor.csproj" />
   <Project Path="Assembly-CSharp.csproj" />
   <Project Path="BakeryRuntimeAssembly.csproj" />
+  <Project Path="PigletEditor.csproj" />
+  <Project Path="com.intothedev.multitags.csproj" />
   <Project Path="BakeryEditorAssembly.csproj" />
   <Project Path="MLMExtensions.csproj" />
   <Project Path="Assembly-CSharp-Editor.csproj" />
@@ -10,4 +13,5 @@
   <Project Path="NonConvexCollider.csproj" />
   <Project Path="NonConvexColliderRuntimeAPI.csproj" />
   <Project Path="BakeryECS.csproj" />
+  <Project Path="Sirenix.OdinInspector.Modules.UnityMathematics.csproj" />
 </Solution>

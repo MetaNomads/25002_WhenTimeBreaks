@@ -1201,7 +1201,54 @@ MonoBehaviour:
   - Assets/A.02_MetaArch/Restaurant/Props/McCup.blend
   - Assets/A.02_MetaArch/Restaurant/Props/becher.fbx
   - Assets/A.02_MetaArch/Restaurant/Mesh/McCup.blend
-  uvOverlapAssetList: 00000000ffffffff00000000000000000000000001010000000000000000000000000000000000000000000001010000000000000000000000000000010100000101000000000000000000000000000000000000000000000000000001010000000000000000000001010000000000000101000000000000000000000000000000000000000000000000000000000000010100000000000000000000000000000000000000000000010100000000000000000000000000000000000000000000010100000000000000000000000000000000000001010000000000000000000001010000010100000000000001010000010100000000000000000000000000000000000000000000000000000000000001010000000000000101000000000000000000000101000001010000000000000000000000000000000000000000000001010000000000000000000000000000010100000101000001010000000000000000000001010000010100000101000001010000
+  - Assets/A.02_MetaArch/OfficeAndPoliceStation/Colliders/Flag_wall_COL.FBX
+  - Packages/com.unity.render-pipelines.core/Runtime/Debug/ProbeSamplingDebugMesh.fbx
+  - Packages/com.meta.xr.sdk.interaction/Runtime/Meshes/OpenXRRightHand.fbx
+  - Packages/com.meta.xr.sdk.interaction/Runtime/Sample/Meshes/scale_affordance.fbx
+  - Assets/A.02_MetaArch/OfficeAndPoliceStation/Colliders/Stairs_TwoFloors_COL.FBX
+  - Assets/A.02_MetaArch/OfficeAndPoliceStation/Colliders/Table_corner_COL.FBX
+  - Packages/com.meta.xr.mrutilitykit/Tests/Meshes/bevelcube.fbx
+  - Packages/com.meta.xr.sdk.interaction/Runtime/Sample/Meshes/BowlCollider.fbx
+  - Assets/A.02_MetaArch/OfficeAndPoliceStation/Colliders/StairsMod_Top_COL.FBX
+  - Packages/com.meta.xr.sdk.core/Meshes/Cone.obj
+  - Assets/A.02_MetaArch/OfficeAndPoliceStation/Colliders/Watersprinklerpipe_L_COL.FBX
+  - Packages/com.meta.xr.sdk.sharedassets/Runtime/Shared/Samples/Objects/Props/StonePolyhedra/Models/StonePolyhedra.fbx
+  - Packages/com.meta.xr.sdk.interaction/Runtime/Meshes/OpenXRLeftHand.fbx
+  - Assets/A.02_MetaArch/OfficeAndPoliceStation/Colliders/StairsMod_Ground_COL.FBX
+  - Packages/com.meta.xr.sdk.interaction/Runtime/Sample/Meshes/skinned_rounded_rectangle.fbx
+  - Packages/com.meta.xr.sdk.sharedassets/Runtime/Shared/Samples/Objects/Props/Key/Models/keyMesh.fbx
+  - Packages/com.meta.xr.sdk.interaction/Runtime/Sample/Objects/Props/PingPong/PingPngPaddle.fbx
+  - Packages/com.meta.xr.sdk.core/Meshes/Ray.obj
+  - Packages/com.meta.xr.sdk.interaction/Runtime/Sample/Objects/Props/ChessPiece/Models/simpleGrabKnight.fbx
+  - Packages/com.meta.xr.sdk.interaction/Runtime/Sample/Objects/Props/MapWithPins/Models/MapFrame.fbx
+  - Packages/com.meta.xr.sdk.interaction/Runtime/Sample/Objects/Props/Mug/Models/mugMeshConvexHulls.fbx
+  - Packages/com.meta.xr.sdk.interaction/Runtime/Sample/Objects/Props/ChessPiece/Models/simpleGrabKnightConvexHulls.fbx
+  - Packages/com.meta.xr.sdk.sharedassets/Runtime/Shared/Samples/Objects/Props/Torch/Models/torchMesh.fbx
+  - Packages/com.meta.xr.sdk.interaction/Runtime/Sample/Objects/Props/Key/Models/keyMesh.fbx
+  - Packages/com.meta.xr.sdk.interaction/Runtime/Sample/Objects/Props/Torch/Models/torchMesh.fbx
+  - Packages/com.meta.xr.sdk.core/Meshes/HandTracking/OpenXRRightHand.fbx
+  - Packages/com.meta.xr.sdk.interaction/Runtime/Sample/Meshes/debug_full_body.fbx
+  - Assets/A.02_MetaArch/OfficeAndPoliceStation/Colliders/Desk_metal_COL.FBX
+  - Packages/com.meta.xr.sdk.interaction/Runtime/Sample/Objects/Props/StonePolyhedra/Models/StonePolyhedra.fbx
+  - Packages/com.unity.render-pipelines.core/Runtime/RenderPipelineResources/Mesh/UnityMaterialBall.fbx
+  - Packages/com.meta.xr.sdk.interaction/Runtime/Sample/Meshes/skinned_articulated_arc.fbx
+  - Assets/A.02_MetaArch/OfficeAndPoliceStation/Colliders/Watersprinklerpipe_R_COL.FBX
+  - Packages/com.meta.xr.sdk.interaction/Runtime/Sample/Objects/Props/MapWithPins/Models/MapPointer.fbx
+  - Assets/A.02_MetaArch/OfficeAndPoliceStation/Colliders/Elevator_COL.FBX
+  - Packages/com.meta.xr.sdk.sharedassets/Runtime/Shared/Samples/Objects/Props/Mug/Models/mugMeshConvexHulls.fbx
+  - Packages/com.meta.xr.sdk.interaction/Runtime/Meshes/Locomotion/LocomotionLocation.fbx
+  - Assets/A.02_MetaArch/OfficeAndPoliceStation/Colliders/W_3x_Elevator_Door_COL.FBX
+  - Assets/A.02_MetaArch/OfficeAndPoliceStation/Colliders/StairsMod_Loop_COL.FBX
+  - Packages/com.meta.xr.sdk.interaction/Runtime/Meshes/Locomotion/LocomotionCross.fbx
+  - Assets/A.02_MetaArch/OfficeAndPoliceStation/Colliders/Cell_COL.FBX
+  - Packages/com.meta.xr.sdk.core/Meshes/HandTracking/OpenXRLeftHand.fbx
+  - Packages/com.meta.xr.sdk.interaction/Runtime/Meshes/OculusHandPinchArrowBlended.fbx
+  - Packages/com.meta.xr.sdk.interaction/Runtime/Meshes/Locomotion/LocomotionPointer.fbx
+  - Assets/A.02_MetaArch/OfficeAndPoliceStation/Colliders/Lamp_desk_COL.FBX
+  - Packages/com.meta.xr.sdk.interaction/Runtime/Sample/Objects/Props/MapWithPins/Models/Map.fbx
+  - Packages/com.unity.render-pipelines.core/Editor/Resources/DebugProbe.fbx
+  - Packages/com.meta.xr.sdk.interaction/Runtime/Sample/Meshes/capsule_affordance.fbx
+  uvOverlapAssetList: 00000000ffffffff000000000000000000000000010100000000000000000000000000000000000000000000010100000000000000000000000000000101000001010000000000000000000000000000000000000000000000000000010100000000000000000000010100000000000001010000000000000000000000000000000000000000000000000000000000000101000000000000000000000000000000000000000000000101000000000000000000000000000000000000000000000101000000000000000000000000000000000000010100000000000000000000010100000101000000000000010100000101000000000000000000000000000000000000000000000000000000000000010100000000000001010000000000000000000001010000010100000000000000000000000000000000000000000000010100000000000000000000000000000101000001010000010100000000000000000000010100000101000001010000010100000101000001010000000000000000000001010000010100000000000000000000010100000101000001010000000000000000000001010000000000000000000000000000000000000101000000000000010100000101000000000000000000000000000000000000000000000101000000000000000000000000000001010000010100000101000001010000000000000101000001010000000000000101000000000000000000000101000001010000000000000000000000000000
   xatlasWarningShown: 0
   foundCompatibleSetup: 1
   gpuName_2: NVIDIA GeForce RTX 4090

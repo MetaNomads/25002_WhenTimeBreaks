@@ -2209,3 +2209,14 @@ Running rgba2tga "C:\Users\altai\AppData\Local\Temp\frender/Restaurant_LM0_final
 Done
 Running rgba2tga "C:\Users\altai\AppData\Local\Temp\frender/Restaurant_LM0_final_L1z.lz4" "E:/25002_WhenTimeBreaks/Assets/B.01_Experiment/Restaurant/Restaurant_LM0_L1z.tga" 
 Done
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file LoadedFromMemory is not a mono symbol file
+abort_threads: Failed aborting id: 0000000000004FB8, mono_thread_manage will ignore it
+
+abort_threads: Failed aborting id: 000000000000BAB4, mono_thread_manage will ignore it
+
+abort_threads: Failed aborting id: 0000000000004FB8, mono_thread_manage will ignore it
+
+abort_threads: Failed aborting id: 000000000000BAB4, mono_thread_manage will ignore it
+
+Error reading command from socketError reading command from socketError reading command from socketError reading command from socketError reading command from socketError reading command from socketError reading command from socketError reading command from socketError reading command from socketError reading command from socketError reading command from socketError reading command from socketError reading command from socketError reading command from socketError reading command from socketError reading command from socketError reading command from socket
