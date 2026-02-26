@@ -8450,3 +8450,1975 @@ launch3
 launch4
 %
 Done
+2026-2-26
+Init...
+Context created
+Tiles: 1
+Loading shader denoisePrepareSH_OIDN.ptx::oxMain...
+Loaded
+Loading shader denoiseFinishSH_OIDN.ptx::oxMain...
+Loaded
+launch1
+launch2
+launch3
+launch4
+Device 0: NVIDIA GeForce RTX 4090 (ON)
+launch1
+launch2
+launch3
+launch4
+launch1
+launch2
+launch3
+launch4
+Device 0: NVIDIA GeForce RTX 4090 (ON)
+launch1
+launch2
+launch3
+launch4
+$
+launch1
+launch2
+launch3
+launch4
+Device 0: NVIDIA GeForce RTX 4090 (ON)
+launch1
+launch2
+launch3
+launch4
+%
+launch1
+launch2
+launch3
+launch4
+Device 0: NVIDIA GeForce RTX 4090 (ON)
+launch1
+launch2
+launch3
+launch4
+%
+launch1
+launch2
+launch3
+launch4
+Device 0: NVIDIA GeForce RTX 4090 (ON)
+launch1
+launch2
+launch3
+launch4
+%
+Done
+2026-2-26
+Init...
+Context created
+Tiles: 1
+Loading shader denoisePrepareSH_OIDN.ptx::oxMain...
+Loaded
+Loading shader denoiseFinishSH_OIDN.ptx::oxMain...
+Loaded
+launch1
+launch2
+launch3
+launch4
+Device 0: NVIDIA GeForce RTX 4090 (ON)
+launch1
+launch2
+launch3
+launch4
+launch1
+launch2
+launch3
+launch4
+Device 0: NVIDIA GeForce RTX 4090 (ON)
+launch1
+launch2
+launch3
+launch4
+$
+launch1
+launch2
+launch3
+launch4
+Device 0: NVIDIA GeForce RTX 4090 (ON)
+launch1
+launch2
+launch3
+launch4
+%
+launch1
+launch2
+launch3
+launch4
+Device 0: NVIDIA GeForce RTX 4090 (ON)
+launch1
+launch2
+launch3
+launch4
+%
+launch1
+launch2
+launch3
+launch4
+Device 0: NVIDIA GeForce RTX 4090 (ON)
+launch1
+launch2
+launch3
+launch4
+%
+Done
+2026-2-26
+Init...
+Context created
+Tiles: 1
+Loading shader denoisePrepareSH_OIDN.ptx::oxMain...
+Loaded
+Loading shader denoiseFinishSH_OIDN.ptx::oxMain...
+Loaded
+launch1
+launch2
+launch3
+launch4
+Device 0: NVIDIA GeForce RTX 4090 (ON)
+launch1
+launch2
+launch3
+launch4
+launch1
+launch2
+launch3
+launch4
+Device 0: NVIDIA GeForce RTX 4090 (ON)
+launch1
+launch2
+launch3
+launch4
+$
+launch1
+launch2
+launch3
+launch4
+Device 0: NVIDIA GeForce RTX 4090 (ON)
+launch1
+launch2
+launch3
+launch4
+%
+launch1
+launch2
+launch3
+launch4
+Device 0: NVIDIA GeForce RTX 4090 (ON)
+launch1
+launch2
+launch3
+launch4
+%
+launch1
+launch2
+launch3
+launch4
+Device 0: NVIDIA GeForce RTX 4090 (ON)
+launch1
+launch2
+launch3
+launch4
+%
+Done
+2026-2-26
+Init...
+Context created
+Tiles: 1
+Loading shader denoisePrepareSH_OIDN.ptx::oxMain...
+Loaded
+Loading shader denoiseFinishSH_OIDN.ptx::oxMain...
+Loaded
+launch1
+launch2
+launch3
+launch4
+Device 0: NVIDIA GeForce RTX 4090 (ON)
+launch1
+launch2
+launch3
+launch4
+launch1
+launch2
+launch3
+launch4
+Device 0: NVIDIA GeForce RTX 4090 (ON)
+launch1
+launch2
+launch3
+launch4
+$
+launch1
+launch2
+launch3
+launch4
+Device 0: NVIDIA GeForce RTX 4090 (ON)
+launch1
+launch2
+launch3
+launch4
+%
+launch1
+launch2
+launch3
+launch4
+Device 0: NVIDIA GeForce RTX 4090 (ON)
+launch1
+launch2
+launch3
+launch4
+%
+launch1
+launch2
+launch3
+launch4
+Device 0: NVIDIA GeForce RTX 4090 (ON)
+launch1
+launch2
+launch3
+launch4
+%
+Done
+2026-2-26
+Init...
+Context created
+Tiles: 1
+Loading shader denoisePrepareSH_OIDN.ptx::oxMain...
+Loaded
+Loading shader denoiseFinishSH_OIDN.ptx::oxMain...
+Loaded
+launch1
+launch2
+launch3
+launch4
+Device 0: NVIDIA GeForce RTX 4090 (ON)
+launch1
+launch2
+launch3
+launch4
+launch1
+launch2
+launch3
+launch4
+Device 0: NVIDIA GeForce RTX 4090 (ON)
+launch1
+launch2
+launch3
+launch4
+$
+launch1
+launch2
+launch3
+launch4
+Device 0: NVIDIA GeForce RTX 4090 (ON)
+launch1
+launch2
+launch3
+launch4
+%
+launch1
+launch2
+launch3
+launch4
+Device 0: NVIDIA GeForce RTX 4090 (ON)
+launch1
+launch2
+launch3
+launch4
+%
+launch1
+launch2
+launch3
+launch4
+Device 0: NVIDIA GeForce RTX 4090 (ON)
+launch1
+launch2
+launch3
+launch4
+%
+Done
+2026-2-26
+Init...
+Context created
+Tiles: 1
+Loading shader denoisePrepareSH_OIDN.ptx::oxMain...
+Loaded
+Loading shader denoiseFinishSH_OIDN.ptx::oxMain...
+Loaded
+launch1
+launch2
+launch3
+launch4
+Device 0: NVIDIA GeForce RTX 4090 (ON)
+launch1
+launch2
+launch3
+launch4
+launch1
+launch2
+launch3
+launch4
+Device 0: NVIDIA GeForce RTX 4090 (ON)
+launch1
+launch2
+launch3
+launch4
+$
+launch1
+launch2
+launch3
+launch4
+Device 0: NVIDIA GeForce RTX 4090 (ON)
+launch1
+launch2
+launch3
+launch4
+%
+launch1
+launch2
+launch3
+launch4
+Device 0: NVIDIA GeForce RTX 4090 (ON)
+launch1
+launch2
+launch3
+launch4
+%
+launch1
+launch2
+launch3
+launch4
+Device 0: NVIDIA GeForce RTX 4090 (ON)
+launch1
+launch2
+launch3
+launch4
+%
+Done
+2026-2-26
+Init...
+Context created
+Tiles: 1
+Loading shader denoisePrepareSH_OIDN.ptx::oxMain...
+Loaded
+Loading shader denoiseFinishSH_OIDN.ptx::oxMain...
+Loaded
+launch1
+launch2
+launch3
+launch4
+Device 0: NVIDIA GeForce RTX 4090 (ON)
+launch1
+launch2
+launch3
+launch4
+launch1
+launch2
+launch3
+launch4
+Device 0: NVIDIA GeForce RTX 4090 (ON)
+launch1
+launch2
+launch3
+launch4
+$
+launch1
+launch2
+launch3
+launch4
+Device 0: NVIDIA GeForce RTX 4090 (ON)
+launch1
+launch2
+launch3
+launch4
+%
+launch1
+launch2
+launch3
+launch4
+Device 0: NVIDIA GeForce RTX 4090 (ON)
+launch1
+launch2
+launch3
+launch4
+%
+launch1
+launch2
+launch3
+launch4
+Device 0: NVIDIA GeForce RTX 4090 (ON)
+launch1
+launch2
+launch3
+launch4
+%
+Done
+2026-2-26
+Init...
+Context created
+Tiles: 1
+Loading shader denoisePrepareSH_OIDN.ptx::oxMain...
+Loaded
+Loading shader denoiseFinishSH_OIDN.ptx::oxMain...
+Loaded
+launch1
+launch2
+launch3
+launch4
+Device 0: NVIDIA GeForce RTX 4090 (ON)
+launch1
+launch2
+launch3
+launch4
+launch1
+launch2
+launch3
+launch4
+Device 0: NVIDIA GeForce RTX 4090 (ON)
+launch1
+launch2
+launch3
+launch4
+$
+launch1
+launch2
+launch3
+launch4
+Device 0: NVIDIA GeForce RTX 4090 (ON)
+launch1
+launch2
+launch3
+launch4
+%
+launch1
+launch2
+launch3
+launch4
+Device 0: NVIDIA GeForce RTX 4090 (ON)
+launch1
+launch2
+launch3
+launch4
+%
+launch1
+launch2
+launch3
+launch4
+Device 0: NVIDIA GeForce RTX 4090 (ON)
+launch1
+launch2
+launch3
+launch4
+%
+Done
+2026-2-26
+Init...
+Context created
+Tiles: 1
+Loading shader denoisePrepareSH_OIDN.ptx::oxMain...
+Loaded
+Loading shader denoiseFinishSH_OIDN.ptx::oxMain...
+Loaded
+launch1
+launch2
+launch3
+launch4
+Device 0: NVIDIA GeForce RTX 4090 (ON)
+launch1
+launch2
+launch3
+launch4
+launch1
+launch2
+launch3
+launch4
+Device 0: NVIDIA GeForce RTX 4090 (ON)
+launch1
+launch2
+launch3
+launch4
+$
+launch1
+launch2
+launch3
+launch4
+Device 0: NVIDIA GeForce RTX 4090 (ON)
+launch1
+launch2
+launch3
+launch4
+%
+launch1
+launch2
+launch3
+launch4
+Device 0: NVIDIA GeForce RTX 4090 (ON)
+launch1
+launch2
+launch3
+launch4
+%
+launch1
+launch2
+launch3
+launch4
+Device 0: NVIDIA GeForce RTX 4090 (ON)
+launch1
+launch2
+launch3
+launch4
+%
+Done
+2026-2-26
+Init...
+Context created
+Tiles: 1
+Loading shader denoisePrepareSH_OIDN.ptx::oxMain...
+Loaded
+Loading shader denoiseFinishSH_OIDN.ptx::oxMain...
+Loaded
+launch1
+launch2
+launch3
+launch4
+Device 0: NVIDIA GeForce RTX 4090 (ON)
+launch1
+launch2
+launch3
+launch4
+launch1
+launch2
+launch3
+launch4
+Device 0: NVIDIA GeForce RTX 4090 (ON)
+launch1
+launch2
+launch3
+launch4
+$
+launch1
+launch2
+launch3
+launch4
+Device 0: NVIDIA GeForce RTX 4090 (ON)
+launch1
+launch2
+launch3
+launch4
+%
+launch1
+launch2
+launch3
+launch4
+Device 0: NVIDIA GeForce RTX 4090 (ON)
+launch1
+launch2
+launch3
+launch4
+%
+launch1
+launch2
+launch3
+launch4
+Device 0: NVIDIA GeForce RTX 4090 (ON)
+launch1
+launch2
+launch3
+launch4
+%
+Done
+2026-2-26
+Init...
+Context created
+Tiles: 1
+Loading shader denoisePrepareSH_OIDN.ptx::oxMain...
+Loaded
+Loading shader denoiseFinishSH_OIDN.ptx::oxMain...
+Loaded
+launch1
+launch2
+launch3
+launch4
+Device 0: NVIDIA GeForce RTX 4090 (ON)
+launch1
+launch2
+launch3
+launch4
+launch1
+launch2
+launch3
+launch4
+Device 0: NVIDIA GeForce RTX 4090 (ON)
+launch1
+launch2
+launch3
+launch4
+$
+launch1
+launch2
+launch3
+launch4
+Device 0: NVIDIA GeForce RTX 4090 (ON)
+launch1
+launch2
+launch3
+launch4
+%
+launch1
+launch2
+launch3
+launch4
+Device 0: NVIDIA GeForce RTX 4090 (ON)
+launch1
+launch2
+launch3
+launch4
+%
+launch1
+launch2
+launch3
+launch4
+Device 0: NVIDIA GeForce RTX 4090 (ON)
+launch1
+launch2
+launch3
+launch4
+%
+Done
+2026-2-26
+Init...
+Context created
+Tiles: 1
+Loading shader denoisePrepareSH_OIDN.ptx::oxMain...
+Loaded
+Loading shader denoiseFinishSH_OIDN.ptx::oxMain...
+Loaded
+launch1
+launch2
+launch3
+launch4
+Device 0: NVIDIA GeForce RTX 4090 (ON)
+launch1
+launch2
+launch3
+launch4
+launch1
+launch2
+launch3
+launch4
+Device 0: NVIDIA GeForce RTX 4090 (ON)
+launch1
+launch2
+launch3
+launch4
+$
+launch1
+launch2
+launch3
+launch4
+Device 0: NVIDIA GeForce RTX 4090 (ON)
+launch1
+launch2
+launch3
+launch4
+%
+launch1
+launch2
+launch3
+launch4
+Device 0: NVIDIA GeForce RTX 4090 (ON)
+launch1
+launch2
+launch3
+launch4
+%
+launch1
+launch2
+launch3
+launch4
+Device 0: NVIDIA GeForce RTX 4090 (ON)
+launch1
+launch2
+launch3
+launch4
+%
+Done
+2026-2-26
+Init...
+Context created
+Tiles: 1
+Loading shader denoisePrepareSH_OIDN.ptx::oxMain...
+Loaded
+Loading shader denoiseFinishSH_OIDN.ptx::oxMain...
+Loaded
+launch1
+launch2
+launch3
+launch4
+Device 0: NVIDIA GeForce RTX 4090 (ON)
+launch1
+launch2
+launch3
+launch4
+launch1
+launch2
+launch3
+launch4
+Device 0: NVIDIA GeForce RTX 4090 (ON)
+launch1
+launch2
+launch3
+launch4
+$
+launch1
+launch2
+launch3
+launch4
+Device 0: NVIDIA GeForce RTX 4090 (ON)
+launch1
+launch2
+launch3
+launch4
+%
+launch1
+launch2
+launch3
+launch4
+Device 0: NVIDIA GeForce RTX 4090 (ON)
+launch1
+launch2
+launch3
+launch4
+%
+launch1
+launch2
+launch3
+launch4
+Device 0: NVIDIA GeForce RTX 4090 (ON)
+launch1
+launch2
+launch3
+launch4
+%
+Done
+2026-2-26
+Init...
+Context created
+Tiles: 1
+Loading shader denoisePrepareSH_OIDN.ptx::oxMain...
+Loaded
+Loading shader denoiseFinishSH_OIDN.ptx::oxMain...
+Loaded
+launch1
+launch2
+launch3
+launch4
+Device 0: NVIDIA GeForce RTX 4090 (ON)
+launch1
+launch2
+launch3
+launch4
+launch1
+launch2
+launch3
+launch4
+Device 0: NVIDIA GeForce RTX 4090 (ON)
+launch1
+launch2
+launch3
+launch4
+$
+launch1
+launch2
+launch3
+launch4
+Device 0: NVIDIA GeForce RTX 4090 (ON)
+launch1
+launch2
+launch3
+launch4
+%
+launch1
+launch2
+launch3
+launch4
+Device 0: NVIDIA GeForce RTX 4090 (ON)
+launch1
+launch2
+launch3
+launch4
+%
+launch1
+launch2
+launch3
+launch4
+Device 0: NVIDIA GeForce RTX 4090 (ON)
+launch1
+launch2
+launch3
+launch4
+%
+Done
+2026-2-26
+Init...
+Context created
+Tiles: 1
+Loading shader denoisePrepareSH_OIDN.ptx::oxMain...
+Loaded
+Loading shader denoiseFinishSH_OIDN.ptx::oxMain...
+Loaded
+launch1
+launch2
+launch3
+launch4
+Device 0: NVIDIA GeForce RTX 4090 (ON)
+launch1
+launch2
+launch3
+launch4
+launch1
+launch2
+launch3
+launch4
+Device 0: NVIDIA GeForce RTX 4090 (ON)
+launch1
+launch2
+launch3
+launch4
+$
+launch1
+launch2
+launch3
+launch4
+Device 0: NVIDIA GeForce RTX 4090 (ON)
+launch1
+launch2
+launch3
+launch4
+%
+launch1
+launch2
+launch3
+launch4
+Device 0: NVIDIA GeForce RTX 4090 (ON)
+launch1
+launch2
+launch3
+launch4
+%
+launch1
+launch2
+launch3
+launch4
+Device 0: NVIDIA GeForce RTX 4090 (ON)
+launch1
+launch2
+launch3
+launch4
+%
+Done
+2026-2-26
+Init...
+Context created
+Tiles: 1
+Loading shader denoisePrepareSH_OIDN.ptx::oxMain...
+Loaded
+Loading shader denoiseFinishSH_OIDN.ptx::oxMain...
+Loaded
+launch1
+launch2
+launch3
+launch4
+Device 0: NVIDIA GeForce RTX 4090 (ON)
+launch1
+launch2
+launch3
+launch4
+launch1
+launch2
+launch3
+launch4
+Device 0: NVIDIA GeForce RTX 4090 (ON)
+launch1
+launch2
+launch3
+launch4
+$
+launch1
+launch2
+launch3
+launch4
+Device 0: NVIDIA GeForce RTX 4090 (ON)
+launch1
+launch2
+launch3
+launch4
+%
+launch1
+launch2
+launch3
+launch4
+Device 0: NVIDIA GeForce RTX 4090 (ON)
+launch1
+launch2
+launch3
+launch4
+%
+launch1
+launch2
+launch3
+launch4
+Device 0: NVIDIA GeForce RTX 4090 (ON)
+launch1
+launch2
+launch3
+launch4
+%
+Done
+2026-2-26
+Init...
+Context created
+Tiles: 1
+Loading shader denoisePrepareSH_OIDN.ptx::oxMain...
+Loaded
+Loading shader denoiseFinishSH_OIDN.ptx::oxMain...
+Loaded
+launch1
+launch2
+launch3
+launch4
+Device 0: NVIDIA GeForce RTX 4090 (ON)
+launch1
+launch2
+launch3
+launch4
+launch1
+launch2
+launch3
+launch4
+Device 0: NVIDIA GeForce RTX 4090 (ON)
+launch1
+launch2
+launch3
+launch4
+$
+launch1
+launch2
+launch3
+launch4
+Device 0: NVIDIA GeForce RTX 4090 (ON)
+launch1
+launch2
+launch3
+launch4
+%
+launch1
+launch2
+launch3
+launch4
+Device 0: NVIDIA GeForce RTX 4090 (ON)
+launch1
+launch2
+launch3
+launch4
+%
+launch1
+launch2
+launch3
+launch4
+Device 0: NVIDIA GeForce RTX 4090 (ON)
+launch1
+launch2
+launch3
+launch4
+%
+Done
+2026-2-26
+Init...
+Context created
+Tiles: 1
+Loading shader denoisePrepareSH_OIDN.ptx::oxMain...
+Loaded
+Loading shader denoiseFinishSH_OIDN.ptx::oxMain...
+Loaded
+launch1
+launch2
+launch3
+launch4
+Device 0: NVIDIA GeForce RTX 4090 (ON)
+launch1
+launch2
+launch3
+launch4
+launch1
+launch2
+launch3
+launch4
+Device 0: NVIDIA GeForce RTX 4090 (ON)
+launch1
+launch2
+launch3
+launch4
+$
+launch1
+launch2
+launch3
+launch4
+Device 0: NVIDIA GeForce RTX 4090 (ON)
+launch1
+launch2
+launch3
+launch4
+%
+launch1
+launch2
+launch3
+launch4
+Device 0: NVIDIA GeForce RTX 4090 (ON)
+launch1
+launch2
+launch3
+launch4
+%
+launch1
+launch2
+launch3
+launch4
+Device 0: NVIDIA GeForce RTX 4090 (ON)
+launch1
+launch2
+launch3
+launch4
+%
+Done
+2026-2-26
+Init...
+Context created
+Tiles: 1
+Loading shader denoisePrepareSH_OIDN.ptx::oxMain...
+Loaded
+Loading shader denoiseFinishSH_OIDN.ptx::oxMain...
+Loaded
+launch1
+launch2
+launch3
+launch4
+Device 0: NVIDIA GeForce RTX 4090 (ON)
+launch1
+launch2
+launch3
+launch4
+launch1
+launch2
+launch3
+launch4
+Device 0: NVIDIA GeForce RTX 4090 (ON)
+launch1
+launch2
+launch3
+launch4
+$
+launch1
+launch2
+launch3
+launch4
+Device 0: NVIDIA GeForce RTX 4090 (ON)
+launch1
+launch2
+launch3
+launch4
+%
+launch1
+launch2
+launch3
+launch4
+Device 0: NVIDIA GeForce RTX 4090 (ON)
+launch1
+launch2
+launch3
+launch4
+%
+launch1
+launch2
+launch3
+launch4
+Device 0: NVIDIA GeForce RTX 4090 (ON)
+launch1
+launch2
+launch3
+launch4
+%
+Done
+2026-2-26
+Init...
+Context created
+Tiles: 1
+Loading shader denoisePrepareSH_OIDN.ptx::oxMain...
+Loaded
+Loading shader denoiseFinishSH_OIDN.ptx::oxMain...
+Loaded
+launch1
+launch2
+launch3
+launch4
+Device 0: NVIDIA GeForce RTX 4090 (ON)
+launch1
+launch2
+launch3
+launch4
+launch1
+launch2
+launch3
+launch4
+Device 0: NVIDIA GeForce RTX 4090 (ON)
+launch1
+launch2
+launch3
+launch4
+$
+launch1
+launch2
+launch3
+launch4
+Device 0: NVIDIA GeForce RTX 4090 (ON)
+launch1
+launch2
+launch3
+launch4
+%
+launch1
+launch2
+launch3
+launch4
+Device 0: NVIDIA GeForce RTX 4090 (ON)
+launch1
+launch2
+launch3
+launch4
+%
+launch1
+launch2
+launch3
+launch4
+Device 0: NVIDIA GeForce RTX 4090 (ON)
+launch1
+launch2
+launch3
+launch4
+%
+Done
+2026-2-26
+Init...
+Context created
+Tiles: 1
+Loading shader denoisePrepareSH_OIDN.ptx::oxMain...
+Loaded
+Loading shader denoiseFinishSH_OIDN.ptx::oxMain...
+Loaded
+launch1
+launch2
+launch3
+launch4
+Device 0: NVIDIA GeForce RTX 4090 (ON)
+launch1
+launch2
+launch3
+launch4
+launch1
+launch2
+launch3
+launch4
+Device 0: NVIDIA GeForce RTX 4090 (ON)
+launch1
+launch2
+launch3
+launch4
+$
+launch1
+launch2
+launch3
+launch4
+Device 0: NVIDIA GeForce RTX 4090 (ON)
+launch1
+launch2
+launch3
+launch4
+%
+launch1
+launch2
+launch3
+launch4
+Device 0: NVIDIA GeForce RTX 4090 (ON)
+launch1
+launch2
+launch3
+launch4
+%
+launch1
+launch2
+launch3
+launch4
+Device 0: NVIDIA GeForce RTX 4090 (ON)
+launch1
+launch2
+launch3
+launch4
+%
+Done
+2026-2-26
+Init...
+Context created
+Tiles: 1
+Loading shader denoisePrepareSH_OIDN.ptx::oxMain...
+Loaded
+Loading shader denoiseFinishSH_OIDN.ptx::oxMain...
+Loaded
+launch1
+launch2
+launch3
+launch4
+Device 0: NVIDIA GeForce RTX 4090 (ON)
+launch1
+launch2
+launch3
+launch4
+launch1
+launch2
+launch3
+launch4
+Device 0: NVIDIA GeForce RTX 4090 (ON)
+launch1
+launch2
+launch3
+launch4
+$
+launch1
+launch2
+launch3
+launch4
+Device 0: NVIDIA GeForce RTX 4090 (ON)
+launch1
+launch2
+launch3
+launch4
+%
+launch1
+launch2
+launch3
+launch4
+Device 0: NVIDIA GeForce RTX 4090 (ON)
+launch1
+launch2
+launch3
+launch4
+%
+launch1
+launch2
+launch3
+launch4
+Device 0: NVIDIA GeForce RTX 4090 (ON)
+launch1
+launch2
+launch3
+launch4
+%
+Done
+2026-2-26
+Init...
+Context created
+Tiles: 1
+Loading shader denoisePrepareSH_OIDN.ptx::oxMain...
+Loaded
+Loading shader denoiseFinishSH_OIDN.ptx::oxMain...
+Loaded
+launch1
+launch2
+launch3
+launch4
+Device 0: NVIDIA GeForce RTX 4090 (ON)
+launch1
+launch2
+launch3
+launch4
+launch1
+launch2
+launch3
+launch4
+Device 0: NVIDIA GeForce RTX 4090 (ON)
+launch1
+launch2
+launch3
+launch4
+$
+launch1
+launch2
+launch3
+launch4
+Device 0: NVIDIA GeForce RTX 4090 (ON)
+launch1
+launch2
+launch3
+launch4
+%
+launch1
+launch2
+launch3
+launch4
+Device 0: NVIDIA GeForce RTX 4090 (ON)
+launch1
+launch2
+launch3
+launch4
+%
+launch1
+launch2
+launch3
+launch4
+Device 0: NVIDIA GeForce RTX 4090 (ON)
+launch1
+launch2
+launch3
+launch4
+%
+Done
+2026-2-26
+Init...
+Context created
+Tiles: 1
+Loading shader denoisePrepareSH_OIDN.ptx::oxMain...
+Loaded
+Loading shader denoiseFinishSH_OIDN.ptx::oxMain...
+Loaded
+launch1
+launch2
+launch3
+launch4
+Device 0: NVIDIA GeForce RTX 4090 (ON)
+launch1
+launch2
+launch3
+launch4
+launch1
+launch2
+launch3
+launch4
+Device 0: NVIDIA GeForce RTX 4090 (ON)
+launch1
+launch2
+launch3
+launch4
+$
+launch1
+launch2
+launch3
+launch4
+Device 0: NVIDIA GeForce RTX 4090 (ON)
+launch1
+launch2
+launch3
+launch4
+%
+launch1
+launch2
+launch3
+launch4
+Device 0: NVIDIA GeForce RTX 4090 (ON)
+launch1
+launch2
+launch3
+launch4
+%
+launch1
+launch2
+launch3
+launch4
+Device 0: NVIDIA GeForce RTX 4090 (ON)
+launch1
+launch2
+launch3
+launch4
+%
+Done
+2026-2-26
+Init...
+Context created
+Tiles: 1
+Loading shader denoisePrepareSH_OIDN.ptx::oxMain...
+Loaded
+Loading shader denoiseFinishSH_OIDN.ptx::oxMain...
+Loaded
+launch1
+launch2
+launch3
+launch4
+Device 0: NVIDIA GeForce RTX 4090 (ON)
+launch1
+launch2
+launch3
+launch4
+launch1
+launch2
+launch3
+launch4
+Device 0: NVIDIA GeForce RTX 4090 (ON)
+launch1
+launch2
+launch3
+launch4
+$
+launch1
+launch2
+launch3
+launch4
+Device 0: NVIDIA GeForce RTX 4090 (ON)
+launch1
+launch2
+launch3
+launch4
+%
+launch1
+launch2
+launch3
+launch4
+Device 0: NVIDIA GeForce RTX 4090 (ON)
+launch1
+launch2
+launch3
+launch4
+%
+launch1
+launch2
+launch3
+launch4
+Device 0: NVIDIA GeForce RTX 4090 (ON)
+launch1
+launch2
+launch3
+launch4
+%
+Done
+2026-2-26
+Init...
+Context created
+Tiles: 1
+Loading shader denoisePrepareSH_OIDN.ptx::oxMain...
+Loaded
+Loading shader denoiseFinishSH_OIDN.ptx::oxMain...
+Loaded
+launch1
+launch2
+launch3
+launch4
+Device 0: NVIDIA GeForce RTX 4090 (ON)
+launch1
+launch2
+launch3
+launch4
+launch1
+launch2
+launch3
+launch4
+Device 0: NVIDIA GeForce RTX 4090 (ON)
+launch1
+launch2
+launch3
+launch4
+$
+launch1
+launch2
+launch3
+launch4
+Device 0: NVIDIA GeForce RTX 4090 (ON)
+launch1
+launch2
+launch3
+launch4
+%
+launch1
+launch2
+launch3
+launch4
+Device 0: NVIDIA GeForce RTX 4090 (ON)
+launch1
+launch2
+launch3
+launch4
+%
+launch1
+launch2
+launch3
+launch4
+Device 0: NVIDIA GeForce RTX 4090 (ON)
+launch1
+launch2
+launch3
+launch4
+%
+Done
+2026-2-26
+Init...
+Context created
+Tiles: 1
+Loading shader denoisePrepareSH_OIDN.ptx::oxMain...
+Loaded
+Loading shader denoiseFinishSH_OIDN.ptx::oxMain...
+Loaded
+launch1
+launch2
+launch3
+launch4
+Device 0: NVIDIA GeForce RTX 4090 (ON)
+launch1
+launch2
+launch3
+launch4
+launch1
+launch2
+launch3
+launch4
+Device 0: NVIDIA GeForce RTX 4090 (ON)
+launch1
+launch2
+launch3
+launch4
+$
+launch1
+launch2
+launch3
+launch4
+Device 0: NVIDIA GeForce RTX 4090 (ON)
+launch1
+launch2
+launch3
+launch4
+%
+launch1
+launch2
+launch3
+launch4
+Device 0: NVIDIA GeForce RTX 4090 (ON)
+launch1
+launch2
+launch3
+launch4
+%
+launch1
+launch2
+launch3
+launch4
+Device 0: NVIDIA GeForce RTX 4090 (ON)
+launch1
+launch2
+launch3
+launch4
+%
+Done
+2026-2-26
+Init...
+Context created
+Tiles: 1
+Loading shader denoisePrepareSH_OIDN.ptx::oxMain...
+Loaded
+Loading shader denoiseFinishSH_OIDN.ptx::oxMain...
+Loaded
+launch1
+launch2
+launch3
+launch4
+Device 0: NVIDIA GeForce RTX 4090 (ON)
+launch1
+launch2
+launch3
+launch4
+launch1
+launch2
+launch3
+launch4
+Device 0: NVIDIA GeForce RTX 4090 (ON)
+launch1
+launch2
+launch3
+launch4
+$
+launch1
+launch2
+launch3
+launch4
+Device 0: NVIDIA GeForce RTX 4090 (ON)
+launch1
+launch2
+launch3
+launch4
+%
+launch1
+launch2
+launch3
+launch4
+Device 0: NVIDIA GeForce RTX 4090 (ON)
+launch1
+launch2
+launch3
+launch4
+%
+launch1
+launch2
+launch3
+launch4
+Device 0: NVIDIA GeForce RTX 4090 (ON)
+launch1
+launch2
+launch3
+launch4
+%
+Done
+2026-2-26
+Init...
+Context created
+Tiles: 1
+Loading shader denoisePrepareSH_OIDN.ptx::oxMain...
+Loaded
+Loading shader denoiseFinishSH_OIDN.ptx::oxMain...
+Loaded
+launch1
+launch2
+launch3
+launch4
+Device 0: NVIDIA GeForce RTX 4090 (ON)
+launch1
+launch2
+launch3
+launch4
+launch1
+launch2
+launch3
+launch4
+Device 0: NVIDIA GeForce RTX 4090 (ON)
+launch1
+launch2
+launch3
+launch4
+$
+launch1
+launch2
+launch3
+launch4
+Device 0: NVIDIA GeForce RTX 4090 (ON)
+launch1
+launch2
+launch3
+launch4
+%
+launch1
+launch2
+launch3
+launch4
+Device 0: NVIDIA GeForce RTX 4090 (ON)
+launch1
+launch2
+launch3
+launch4
+%
+launch1
+launch2
+launch3
+launch4
+Device 0: NVIDIA GeForce RTX 4090 (ON)
+launch1
+launch2
+launch3
+launch4
+%
+Done
+2026-2-26
+Init...
+Context created
+Tiles: 1
+Loading shader denoisePrepareSH_OIDN.ptx::oxMain...
+Loaded
+Loading shader denoiseFinishSH_OIDN.ptx::oxMain...
+Loaded
+launch1
+launch2
+launch3
+launch4
+Device 0: NVIDIA GeForce RTX 4090 (ON)
+launch1
+launch2
+launch3
+launch4
+launch1
+launch2
+launch3
+launch4
+Device 0: NVIDIA GeForce RTX 4090 (ON)
+launch1
+launch2
+launch3
+launch4
+$
+launch1
+launch2
+launch3
+launch4
+Device 0: NVIDIA GeForce RTX 4090 (ON)
+launch1
+launch2
+launch3
+launch4
+%
+launch1
+launch2
+launch3
+launch4
+Device 0: NVIDIA GeForce RTX 4090 (ON)
+launch1
+launch2
+launch3
+launch4
+%
+launch1
+launch2
+launch3
+launch4
+Device 0: NVIDIA GeForce RTX 4090 (ON)
+launch1
+launch2
+launch3
+launch4
+%
+Done
+2026-2-26
+Init...
+Context created
+Tiles: 1
+Loading shader denoisePrepareSH_OIDN.ptx::oxMain...
+Loaded
+Loading shader denoiseFinishSH_OIDN.ptx::oxMain...
+Loaded
+launch1
+launch2
+launch3
+launch4
+Device 0: NVIDIA GeForce RTX 4090 (ON)
+launch1
+launch2
+launch3
+launch4
+launch1
+launch2
+launch3
+launch4
+Device 0: NVIDIA GeForce RTX 4090 (ON)
+launch1
+launch2
+launch3
+launch4
+$
+launch1
+launch2
+launch3
+launch4
+Device 0: NVIDIA GeForce RTX 4090 (ON)
+launch1
+launch2
+launch3
+launch4
+%
+launch1
+launch2
+launch3
+launch4
+Device 0: NVIDIA GeForce RTX 4090 (ON)
+launch1
+launch2
+launch3
+launch4
+%
+launch1
+launch2
+launch3
+launch4
+Device 0: NVIDIA GeForce RTX 4090 (ON)
+launch1
+launch2
+launch3
+launch4
+%
+Done
+2026-2-26
+Init...
+Context created
+Tiles: 1
+Loading shader denoisePrepareSH_OIDN.ptx::oxMain...
+Loaded
+Loading shader denoiseFinishSH_OIDN.ptx::oxMain...
+Loaded
+launch1
+launch2
+launch3
+launch4
+Device 0: NVIDIA GeForce RTX 4090 (ON)
+launch1
+launch2
+launch3
+launch4
+launch1
+launch2
+launch3
+launch4
+Device 0: NVIDIA GeForce RTX 4090 (ON)
+launch1
+launch2
+launch3
+launch4
+$
+launch1
+launch2
+launch3
+launch4
+Device 0: NVIDIA GeForce RTX 4090 (ON)
+launch1
+launch2
+launch3
+launch4
+%
+launch1
+launch2
+launch3
+launch4
+Device 0: NVIDIA GeForce RTX 4090 (ON)
+launch1
+launch2
+launch3
+launch4
+%
+launch1
+launch2
+launch3
+launch4
+Device 0: NVIDIA GeForce RTX 4090 (ON)
+launch1
+launch2
+launch3
+launch4
+%
+Done
+2026-2-26
+Init...
+Context created
+Tiles: 1
+Loading shader denoisePrepareSH_OIDN.ptx::oxMain...
+Loaded
+Loading shader denoiseFinishSH_OIDN.ptx::oxMain...
+Loaded
+launch1
+launch2
+launch3
+launch4
+Device 0: NVIDIA GeForce RTX 4090 (ON)
+launch1
+launch2
+launch3
+launch4
+launch1
+launch2
+launch3
+launch4
+Device 0: NVIDIA GeForce RTX 4090 (ON)
+launch1
+launch2
+launch3
+launch4
+$
+launch1
+launch2
+launch3
+launch4
+Device 0: NVIDIA GeForce RTX 4090 (ON)
+launch1
+launch2
+launch3
+launch4
+%
+launch1
+launch2
+launch3
+launch4
+Device 0: NVIDIA GeForce RTX 4090 (ON)
+launch1
+launch2
+launch3
+launch4
+%
+launch1
+launch2
+launch3
+launch4
+Device 0: NVIDIA GeForce RTX 4090 (ON)
+launch1
+launch2
+launch3
+launch4
+%
+Done
+2026-2-26
+Init...
+Context created
+Tiles: 1
+Loading shader denoisePrepareSH_OIDN.ptx::oxMain...
+Loaded
+Loading shader denoiseFinishSH_OIDN.ptx::oxMain...
+Loaded
+launch1
+launch2
+launch3
+launch4
+Device 0: NVIDIA GeForce RTX 4090 (ON)
+launch1
+launch2
+launch3
+launch4
+launch1
+launch2
+launch3
+launch4
+Device 0: NVIDIA GeForce RTX 4090 (ON)
+launch1
+launch2
+launch3
+launch4
+$
+launch1
+launch2
+launch3
+launch4
+Device 0: NVIDIA GeForce RTX 4090 (ON)
+launch1
+launch2
+launch3
+launch4
+%
+launch1
+launch2
+launch3
+launch4
+Device 0: NVIDIA GeForce RTX 4090 (ON)
+launch1
+launch2
+launch3
+launch4
+%
+launch1
+launch2
+launch3
+launch4
+Device 0: NVIDIA GeForce RTX 4090 (ON)
+launch1
+launch2
+launch3
+launch4
+%
+Done
