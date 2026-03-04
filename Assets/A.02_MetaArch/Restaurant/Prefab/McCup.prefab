@@ -188,8 +188,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3301501178809144193}
   - component: {fileID: 8363367805604296951}
-  - component: {fileID: 7685998501424991174}
-  - component: {fileID: 6642733440750188798}
+  - component: {fileID: 4334484261724709362}
   m_Layer: 0
   m_Name: McCup
   m_TagString: Untagged
@@ -223,7 +222,7 @@ Rigidbody:
   serializedVersion: 5
   m_Mass: 0.3
   m_LinearDamping: 0
-  m_AngularDamping: 0
+  m_AngularDamping: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
   m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -240,57 +239,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &7685998501424991174
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2781704464401402171}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c8c4b627a8d8e4034b875858f5657288, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: NonConvexCollider::Plawius.NonConvexCollider.NonConvexColliderComponent
-  Algorithm: 0
-  CommonParams:
-    maxConvexHulls: 1
-    maxVerticesPerHull: 32
-  Params:
-    maxConvexHulls: 32
-    resolution: 10000
-    concavity: 0.0025
-    planeDownsampling: 4
-    convexhullApproximation: 4
-    alpha: 0.05
-    beta: 0.05
-    pca: 1
-    mode: 0
-    maxNumVerticesPerCH: 64
-    minVolumePerCH: 0.0001
-  CoACDParams:
-    threshold: 0.05
-    maxConvexHull: 32
-    preprocessMode: 0
-    prepResolution: 50
-    sampleResolution: 2000
-    mctsNodes: 20
-    mctsIteration: 150
-    mctsMaxDepth: 3
-    pca: 0
-    merge: 1
-    decimate: 1
-    maxChVertex: 128
-    extrude: 0
-    extrudeMargin: 0.01
-    seed: 0
-  m_colliders:
-  - {fileID: 6642733440750188798}
-  m_isTrigger: 0
-  m_material: {fileID: 0}
-  m_showColliders: 1
-  m_colliderAsset: {fileID: 11400000, guid: 3072d6a48d7ebb74c834c6141d207629, type: 2}
---- !u!64 &6642733440750188798
+--- !u!64 &4334484261724709362
 MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -311,7 +260,7 @@ MeshCollider:
   serializedVersion: 5
   m_Convex: 1
   m_CookingOptions: 30
-  m_Mesh: {fileID: 663942647072927976, guid: 3072d6a48d7ebb74c834c6141d207629, type: 2}
+  m_Mesh: {fileID: 5349589827156713225, guid: 6de7445c5c63a0d46ac5d774d37d5ae9, type: 2}
 --- !u!1 &6061644134573313156
 GameObject:
   m_ObjectHideFlags: 0

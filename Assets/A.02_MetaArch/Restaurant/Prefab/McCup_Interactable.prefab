@@ -241,7 +241,7 @@ MonoBehaviour:
   _maxInteractors: -1
   _maxSelectingInteractors: -1
   _data: {fileID: 0}
-  _pointableElement: {fileID: 6169266564015242405}
+  _pointableElement: {fileID: 739178823836698595}
   _rigidbody: {fileID: 3704194308233007434}
   _physicsGrabbable: {fileID: 0}
   _resetGrabOnGrabsUpdated: 1
@@ -316,7 +316,7 @@ MonoBehaviour:
   _maxInteractors: -1
   _maxSelectingInteractors: -1
   _data: {fileID: 0}
-  _pointableElement: {fileID: 6169266564015242405}
+  _pointableElement: {fileID: 739178823836698595}
   _rigidbody: {fileID: 3704194308233007434}
   _physicsGrabbable: {fileID: 0}
   _resetGrabOnGrabsUpdated: 1
@@ -487,7 +487,7 @@ MonoBehaviour:
   _maxInteractors: -1
   _maxSelectingInteractors: -1
   _data: {fileID: 0}
-  _pointableElement: {fileID: 6169266564015242405}
+  _pointableElement: {fileID: 739178823836698595}
   _rigidbody: {fileID: 3704194308233007434}
   _physicsGrabbable: {fileID: 0}
   _resetGrabOnGrabsUpdated: 1
@@ -562,7 +562,7 @@ MonoBehaviour:
   _maxInteractors: -1
   _maxSelectingInteractors: -1
   _data: {fileID: 0}
-  _pointableElement: {fileID: 6169266564015242405}
+  _pointableElement: {fileID: 739178823836698595}
   _rigidbody: {fileID: 3704194308233007434}
   _physicsGrabbable: {fileID: 0}
   _resetGrabOnGrabsUpdated: 1
@@ -733,7 +733,7 @@ MonoBehaviour:
   _maxInteractors: -1
   _maxSelectingInteractors: -1
   _data: {fileID: 0}
-  _pointableElement: {fileID: 6169266564015242405}
+  _pointableElement: {fileID: 739178823836698595}
   _rigidbody: {fileID: 3704194308233007434}
   _physicsGrabbable: {fileID: 0}
   _resetGrabOnGrabsUpdated: 1
@@ -808,7 +808,7 @@ MonoBehaviour:
   _maxInteractors: -1
   _maxSelectingInteractors: -1
   _data: {fileID: 0}
-  _pointableElement: {fileID: 6169266564015242405}
+  _pointableElement: {fileID: 739178823836698595}
   _rigidbody: {fileID: 3704194308233007434}
   _physicsGrabbable: {fileID: 0}
   _resetGrabOnGrabsUpdated: 1
@@ -1290,7 +1290,7 @@ MonoBehaviour:
   _maxInteractors: -1
   _maxSelectingInteractors: -1
   _data: {fileID: 0}
-  _pointableElement: {fileID: 6169266564015242405}
+  _pointableElement: {fileID: 739178823836698595}
   _rigidbody: {fileID: 3704194308233007434}
   _physicsGrabbable: {fileID: 0}
   _resetGrabOnGrabsUpdated: 1
@@ -1365,7 +1365,7 @@ MonoBehaviour:
   _maxInteractors: -1
   _maxSelectingInteractors: -1
   _data: {fileID: 0}
-  _pointableElement: {fileID: 6169266564015242405}
+  _pointableElement: {fileID: 739178823836698595}
   _rigidbody: {fileID: 3704194308233007434}
   _physicsGrabbable: {fileID: 0}
   _resetGrabOnGrabsUpdated: 1
@@ -1632,7 +1632,7 @@ MonoBehaviour:
   _maxInteractors: -1
   _maxSelectingInteractors: -1
   _data: {fileID: 0}
-  _pointableElement: {fileID: 6169266564015242405}
+  _pointableElement: {fileID: 739178823836698595}
   _rigidbody: {fileID: 3704194308233007434}
   _physicsGrabbable: {fileID: 0}
   _resetGrabOnGrabsUpdated: 1
@@ -1707,7 +1707,7 @@ MonoBehaviour:
   _maxInteractors: -1
   _maxSelectingInteractors: -1
   _data: {fileID: 0}
-  _pointableElement: {fileID: 6169266564015242405}
+  _pointableElement: {fileID: 739178823836698595}
   _rigidbody: {fileID: 3704194308233007434}
   _physicsGrabbable: {fileID: 0}
   _resetGrabOnGrabsUpdated: 1
@@ -1782,7 +1782,7 @@ MonoBehaviour:
   _maxInteractors: -1
   _maxSelectingInteractors: -1
   _data: {fileID: 0}
-  _pointableElement: {fileID: 6169266564015242405}
+  _pointableElement: {fileID: 739178823836698595}
   _rigidbody: {fileID: 3704194308233007434}
   _physicsGrabbable: {fileID: 0}
   _resetGrabOnGrabsUpdated: 1
@@ -1857,7 +1857,7 @@ MonoBehaviour:
   _maxInteractors: -1
   _maxSelectingInteractors: -1
   _data: {fileID: 0}
-  _pointableElement: {fileID: 6169266564015242405}
+  _pointableElement: {fileID: 739178823836698595}
   _rigidbody: {fileID: 3704194308233007434}
   _physicsGrabbable: {fileID: 0}
   _resetGrabOnGrabsUpdated: 1
@@ -2316,7 +2316,7 @@ MonoBehaviour:
   _maxInteractors: -1
   _maxSelectingInteractors: -1
   _data: {fileID: 0}
-  _pointableElement: {fileID: 6169266564015242405}
+  _pointableElement: {fileID: 739178823836698595}
   _rigidbody: {fileID: 3704194308233007434}
   _physicsGrabbable: {fileID: 0}
   _resetGrabOnGrabsUpdated: 1
@@ -2583,7 +2583,7 @@ MonoBehaviour:
   _maxInteractors: -1
   _maxSelectingInteractors: -1
   _data: {fileID: 0}
-  _pointableElement: {fileID: 6169266564015242405}
+  _pointableElement: {fileID: 739178823836698595}
   _rigidbody: {fileID: 3704194308233007434}
   _physicsGrabbable: {fileID: 0}
   _resetGrabOnGrabsUpdated: 1
@@ -2850,7 +2850,7 @@ MonoBehaviour:
   _maxInteractors: -1
   _maxSelectingInteractors: -1
   _data: {fileID: 0}
-  _pointableElement: {fileID: 6169266564015242405}
+  _pointableElement: {fileID: 739178823836698595}
   _rigidbody: {fileID: 3704194308233007434}
   _physicsGrabbable: {fileID: 0}
   _resetGrabOnGrabsUpdated: 1
@@ -2925,7 +2925,7 @@ MonoBehaviour:
   _maxInteractors: -1
   _maxSelectingInteractors: -1
   _data: {fileID: 0}
-  _pointableElement: {fileID: 6169266564015242405}
+  _pointableElement: {fileID: 739178823836698595}
   _rigidbody: {fileID: 3704194308233007434}
   _physicsGrabbable: {fileID: 0}
   _resetGrabOnGrabsUpdated: 1
@@ -3288,7 +3288,7 @@ MonoBehaviour:
   _maxInteractors: -1
   _maxSelectingInteractors: -1
   _data: {fileID: 0}
-  _pointableElement: {fileID: 6169266564015242405}
+  _pointableElement: {fileID: 739178823836698595}
   _rigidbody: {fileID: 3704194308233007434}
   _physicsGrabbable: {fileID: 0}
   _resetGrabOnGrabsUpdated: 1
@@ -3459,7 +3459,7 @@ MonoBehaviour:
   _maxInteractors: -1
   _maxSelectingInteractors: -1
   _data: {fileID: 0}
-  _pointableElement: {fileID: 6169266564015242405}
+  _pointableElement: {fileID: 739178823836698595}
   _rigidbody: {fileID: 3704194308233007434}
   _physicsGrabbable: {fileID: 0}
   _resetGrabOnGrabsUpdated: 1
@@ -3534,7 +3534,7 @@ MonoBehaviour:
   _maxInteractors: -1
   _maxSelectingInteractors: -1
   _data: {fileID: 0}
-  _pointableElement: {fileID: 6169266564015242405}
+  _pointableElement: {fileID: 739178823836698595}
   _rigidbody: {fileID: 3704194308233007434}
   _physicsGrabbable: {fileID: 0}
   _resetGrabOnGrabsUpdated: 1
@@ -3609,7 +3609,7 @@ MonoBehaviour:
   _maxInteractors: -1
   _maxSelectingInteractors: -1
   _data: {fileID: 0}
-  _pointableElement: {fileID: 6169266564015242405}
+  _pointableElement: {fileID: 739178823836698595}
   _rigidbody: {fileID: 3704194308233007434}
   _physicsGrabbable: {fileID: 0}
   _resetGrabOnGrabsUpdated: 1
@@ -3684,7 +3684,7 @@ MonoBehaviour:
   _maxInteractors: -1
   _maxSelectingInteractors: -1
   _data: {fileID: 0}
-  _pointableElement: {fileID: 6169266564015242405}
+  _pointableElement: {fileID: 739178823836698595}
   _rigidbody: {fileID: 3704194308233007434}
   _physicsGrabbable: {fileID: 0}
   _resetGrabOnGrabsUpdated: 1
@@ -3855,7 +3855,7 @@ MonoBehaviour:
   _maxInteractors: -1
   _maxSelectingInteractors: -1
   _data: {fileID: 0}
-  _pointableElement: {fileID: 6169266564015242405}
+  _pointableElement: {fileID: 739178823836698595}
   _rigidbody: {fileID: 3704194308233007434}
   _physicsGrabbable: {fileID: 0}
   _resetGrabOnGrabsUpdated: 1
@@ -4026,7 +4026,7 @@ MonoBehaviour:
   _maxInteractors: -1
   _maxSelectingInteractors: -1
   _data: {fileID: 0}
-  _pointableElement: {fileID: 6169266564015242405}
+  _pointableElement: {fileID: 739178823836698595}
   _rigidbody: {fileID: 3704194308233007434}
   _physicsGrabbable: {fileID: 0}
   _resetGrabOnGrabsUpdated: 1
@@ -4101,7 +4101,7 @@ MonoBehaviour:
   _maxInteractors: -1
   _maxSelectingInteractors: -1
   _data: {fileID: 0}
-  _pointableElement: {fileID: 6169266564015242405}
+  _pointableElement: {fileID: 739178823836698595}
   _rigidbody: {fileID: 3704194308233007434}
   _physicsGrabbable: {fileID: 0}
   _resetGrabOnGrabsUpdated: 1
@@ -4244,7 +4244,7 @@ PrefabInstance:
     - target: {fileID: 3301501178809144193, guid: 6339029142a841e46ac8a8d838565d85,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.9218
+      value: 2.9182
       objectReference: {fileID: 0}
     - target: {fileID: 3301501178809144193, guid: 6339029142a841e46ac8a8d838565d85,
         type: 3}
@@ -4286,12 +4286,35 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8363367805604296951, guid: 6339029142a841e46ac8a8d838565d85,
+    - target: {fileID: 6642733440750188798, guid: 6339029142a841e46ac8a8d838565d85,
         type: 3}
-      propertyPath: m_AngularDamping
-      value: 0.05
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 5349589827156713225, guid: 6de7445c5c63a0d46ac5d774d37d5ae9,
+        type: 2}
+    - target: {fileID: 6642733440750188798, guid: 6339029142a841e46ac8a8d838565d85,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 6664409887398876505, guid: 6339029142a841e46ac8a8d838565d85,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7685998501424991174, guid: 6339029142a841e46ac8a8d838565d85,
+        type: 3}
+      propertyPath: 'm_colliders.Array.data[0]'
+      value: 
+      objectReference: {fileID: 8885736019918620751}
+    - target: {fileID: 8461645558250763018, guid: 6339029142a841e46ac8a8d838565d85,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 0}
+    - {fileID: 0}
     m_RemovedGameObjects: []
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 3301501178809144193, guid: 6339029142a841e46ac8a8d838565d85,
@@ -4309,23 +4332,13 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 2781704464401402171, guid: 6339029142a841e46ac8a8d838565d85,
         type: 3}
-      insertIndex: 2
-      addedObject: {fileID: 6169266564015242405}
-    - targetCorrespondingSourceObject: {fileID: 2781704464401402171, guid: 6339029142a841e46ac8a8d838565d85,
-        type: 3}
-      insertIndex: 3
-      addedObject: {fileID: 4212945716797121197}
+      insertIndex: -1
+      addedObject: {fileID: 739178823836698595}
     - targetCorrespondingSourceObject: {fileID: 2781704464401402171, guid: 6339029142a841e46ac8a8d838565d85,
         type: 3}
       insertIndex: -1
-      addedObject: {fileID: 362102301532627181}
+      addedObject: {fileID: 6103484451317862095}
   m_SourcePrefab: {fileID: 100100000, guid: 6339029142a841e46ac8a8d838565d85, type: 3}
---- !u!64 &1970585914786582851 stripped
-MeshCollider:
-  m_CorrespondingSourceObject: {fileID: 6642733440750188798, guid: 6339029142a841e46ac8a8d838565d85,
-    type: 3}
-  m_PrefabInstance: {fileID: 5149681096438049213}
-  m_PrefabAsset: {fileID: 0}
 --- !u!54 &3704194308233007434 stripped
 Rigidbody:
   m_CorrespondingSourceObject: {fileID: 8363367805604296951, guid: 6339029142a841e46ac8a8d838565d85,
@@ -4338,7 +4351,7 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 5149681096438049213}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &6169266564015242405
+--- !u!114 &739178823836698595
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4360,8 +4373,8 @@ MonoBehaviour:
   _rigidbody: {fileID: 3704194308233007434}
   _kinematicWhileSelected: 1
   _throwWhenUnselected: 1
-  _forceKinematicDisabled: 0
---- !u!114 &4212945716797121197
+  _forceKinematicDisabled: 1
+--- !u!114 &6103484451317862095
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4373,7 +4386,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2f8f6e9e6f3e114b9bf9a57c2160615, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Oculus.Interaction::Oculus.Interaction.PointableUnityEventWrapper
-  _pointable: {fileID: 6169266564015242405}
+  _pointable: {fileID: 739178823836698595}
   _whenRelease:
     m_PersistentCalls:
       m_Calls: []
@@ -4419,22 +4432,15 @@ MonoBehaviour:
   _whenCancel:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &362102301532627181
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7056523603998171270}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8951a656a7c00e74094166ef415cdce5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Oculus.Interaction::Oculus.Interaction.Grab.GrabSurfaces.ColliderGrabSurface
-  _collider: {fileID: 1970585914786582851}
 --- !u!4 &7684863315835107900 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3301501178809144193, guid: 6339029142a841e46ac8a8d838565d85,
+    type: 3}
+  m_PrefabInstance: {fileID: 5149681096438049213}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &8885736019918620751 stripped
+MeshCollider:
+  m_CorrespondingSourceObject: {fileID: 4334484261724709362, guid: 6339029142a841e46ac8a8d838565d85,
     type: 3}
   m_PrefabInstance: {fileID: 5149681096438049213}
   m_PrefabAsset: {fileID: 0}
