@@ -19,16 +19,7 @@ public class GameStateManager : MonoBehaviour
     [SerializeField]
     private SpawnMechanism spawnMechanism;
 
-    //Keeps track of the current session
-    public enum SessionType
-    {
-        TUTORIAL,
-        SESSION_A,
-        SESSION_B,
-        SESSION_C
-    }
-    [SerializeField]
-    private SessionType currentSessionType = SessionType.TUTORIAL;
+
 
     //Keeps track of the current trial
     private int trialNumber = 0;
@@ -40,6 +31,10 @@ public class GameStateManager : MonoBehaviour
         ANOMOLY_1_OPTION_1,
         ANOMOLY_1_OPTION_2,
         AMOMOLY_1_OPTION_3,
+        ANOMOLY_2_OPTION_1,
+        ANOMOLY_2_OPTION_2,
+        ANOMOLY_2_OPTION_3,
+
         //Add rest
 
         CANCEL //Unsure if we need this one but just to be safe I left it as an option
@@ -64,6 +59,12 @@ public class GameStateManager : MonoBehaviour
         public string trialStartTime;
         [System.NonSerialized]
         public string trialEndTime;
+        [System.NonSerialized]
+        public string objectAtSource;
+        [System.NonSerialized]
+        public string objectInHand;
+        [System.NonSerialized]
+        public string objectAtTarget;
     }
 
 
@@ -73,25 +74,41 @@ public class GameStateManager : MonoBehaviour
         public List<TrialData> trialData;
     }
 
+    //Keeps track of the session types
+    public enum SessionType
+    {
+        TUTORIAL,
+        SESSION_A,
+        SESSION_B,
+        SESSION_C,
+    }
+
+
     //Struct which holds Session Sequences
     [System.Serializable]
     public struct SessionData
     {
         public SessionType sessionType;
         public List<SequenceData> sequences;
+        [System.NonSerialized]
+        public int currentSequence;
     }
 
     //Holds all the Sessions' Datas
     [SerializeField]
     private List<SessionData> SessionSequences = new List<SessionData>();
 
+    //Holds the info and data for the current session
+    [SerializeField]
+    private SessionData? currentSessionData = null;
+
     //Event which signals anytime a new trial begins
     public event GameState GameStateTrigger;
-    public delegate void GameState(SessionType sessionType, int trialNumber, TrialData trialData);
+    public delegate void GameState(SessionData? sessionType, int trialNumber, TrialData trialData);
 
     //Event which signals every time a trial state is triggers (ex. picking up the cup, cup placed at target, etc.)
     public event TrialStateUpdate TrialStatesTrigger;
-    public delegate void TrialStateUpdate(SessionType sessionType, int trialNumber, TrialStates trialState);
+    public delegate void TrialStateUpdate(SessionData? sessionType, int trialNumber, TrialStates trialState);
 
 
     //Keeps track of if an experiment is currently in progress
@@ -132,23 +149,64 @@ public class GameStateManager : MonoBehaviour
 
     public void UpdateSessionType(SessionType sessionType)
     {
-        currentSessionType = sessionType;
-        currentTrialList = getRandomSequenceFromSession(currentSessionType);
+        currentSessionData = MatchSessionTypeToData(sessionType);
+        currentTrialList = getRandomSequenceFromSession(sessionType);
+    }
+
+    public SessionData? MatchSessionTypeToData(SessionType sessionType)
+    {
+        switch (sessionType)
+        {
+            case SessionType.TUTORIAL:
+                return SessionSequences[0];
+            case SessionType.SESSION_A:
+                return SessionSequences[1];
+            case SessionType.SESSION_B:
+                return SessionSequences[2];
+            case SessionType.SESSION_C:
+                return SessionSequences[3];
+            default:
+                Debug.LogError("Session type not found!");
+                return null;
+        }
     }
 
     private List<TrialData> getRandomSequenceFromSession(SessionType sessionType)
     {
+
+        //Note: MatchSessionTypeToData() was made after and could be used to clean up this function
+
+        int selectedSequence = -100;
+        SessionData tempSessionData;
+
         switch (sessionType) {
             case SessionType.TUTORIAL:
-                return SessionSequences[0].sequences[UnityEngine.Random.Range(0, SessionSequences[0].sequences.Count)].trialData;
+                selectedSequence = UnityEngine.Random.Range(0, SessionSequences[0].sequences.Count);
+                tempSessionData = SessionSequences[0];
+                tempSessionData.currentSequence = selectedSequence;
+                SessionSequences[0] = tempSessionData;
+                return SessionSequences[0].sequences[selectedSequence].trialData;
             case SessionType.SESSION_A:
-                return SessionSequences[1].sequences[UnityEngine.Random.Range(0, SessionSequences[1].sequences.Count)].trialData;
+                selectedSequence = UnityEngine.Random.Range(0, SessionSequences[1].sequences.Count);
+                tempSessionData = SessionSequences[1];
+                tempSessionData.currentSequence = selectedSequence;
+                SessionSequences[1] = tempSessionData;
+                return SessionSequences[1].sequences[selectedSequence].trialData;
             case SessionType.SESSION_B:
-                return SessionSequences[2].sequences[UnityEngine.Random.Range(0, SessionSequences[2].sequences.Count)].trialData;
+                selectedSequence = UnityEngine.Random.Range(0, SessionSequences[2].sequences.Count);
+                tempSessionData = SessionSequences[2];
+                tempSessionData.currentSequence = selectedSequence;
+                SessionSequences[2] = tempSessionData;
+                return SessionSequences[2].sequences[selectedSequence].trialData;
             case SessionType.SESSION_C:
-                return SessionSequences[3].sequences[UnityEngine.Random.Range(0, SessionSequences[3].sequences.Count)].trialData;
+                selectedSequence = UnityEngine.Random.Range(0, SessionSequences[3].sequences.Count);
+                tempSessionData = SessionSequences[3];
+                tempSessionData.currentSequence = selectedSequence;
+                SessionSequences[3] = tempSessionData;
+                return SessionSequences[3].sequences[selectedSequence].trialData;
 
         }
+
 
         Debug.LogError("Session Type is not registered in getRandomSequenceFromSession()");
         return null;
@@ -159,6 +217,13 @@ public class GameStateManager : MonoBehaviour
     {
         if (experimentInProgress == false)
         {
+
+            if (currentSessionData == null)
+            {
+                Debug.LogError("Session type not set. Will not begin experiment");
+                return;
+            }
+
             BeginNextTrial();
             experimentInProgress = true;
             Debug.Log("GSM: Experiment started");
@@ -179,7 +244,14 @@ public class GameStateManager : MonoBehaviour
 
 
         //Update the current state
-        trialNumber += 1;
+        if (checkIfTrialCanContinue())
+        {
+            trialNumber += 1;
+        }
+        else
+        {
+            return;
+        }
 
         Debug.Log("GSM: Trial " + trialNumber + " Is Starting.");
 
@@ -190,10 +262,30 @@ public class GameStateManager : MonoBehaviour
         currentTrialList[trialNumber] = trialData;
 
         //Send event signal
-        GameStateTrigger.Invoke(currentSessionType, trialNumber, currentTrialList[trialNumber]);
+        GameStateTrigger.Invoke(currentSessionData, trialNumber, currentTrialList[trialNumber]);
 
         spawnMechanism.SpawnCup();
     }
+
+    private bool checkIfTrialCanContinue()
+    {
+        if ((trialNumber + 1) < currentTrialList.Count)
+        {
+            return true;
+        }
+        ConcludeSession();
+        return false;
+    }
+
+    private void ConcludeSession()
+    {
+        Debug.Log("GSM: Session concluded");
+        experimentInProgress = false;
+        currentSessionData = null;
+        currentTrialList = null;
+        //Do other things here to tell the participant their session has concluded.
+    }
+
 
 
     public void UpdateDataThenBeginNextTrial(StateData stateData)
@@ -220,5 +312,54 @@ public class GameStateManager : MonoBehaviour
     {
         spawnMechanism.DestroyCup();
         Debug.Log("GSM: Ending trial " + trialNumber);
+    }
+
+
+    /* Signals for the trial! Make sure to call these to the objects using AnomolyReciever know when these events occur! */
+    public void HandGrabbedObjectSignal()
+    {
+        TrialData trialData = currentTrialList[trialNumber];
+        trialData.objectInHand = DateTime.Now.ToString("yyyy-MM-dd_HH-mm-ss");
+
+        currentTrialList[trialNumber] = trialData;
+
+        TrialStatesTrigger.Invoke(currentSessionData, trialNumber, TrialStates.IN_HAND);
+    }
+
+    public void ObjectReachedSourceSignal()
+    {
+        TrialData trialData = currentTrialList[trialNumber];
+        trialData.objectAtSource = DateTime.Now.ToString("yyyy-MM-dd_HH-mm-ss");
+
+        currentTrialList[trialNumber] = trialData;
+
+        TrialStatesTrigger.Invoke(currentSessionData, trialNumber, TrialStates.AT_SOURCE);
+    }
+
+    public void ObjectReachedTargetSignal()
+    {
+        TrialData trialData = currentTrialList[trialNumber];
+        trialData.objectAtTarget = DateTime.Now.ToString("yyyy-MM-dd_HH-mm-ss");
+
+        currentTrialList[trialNumber] = trialData;
+
+        TrialStatesTrigger.Invoke(currentSessionData, trialNumber, TrialStates.AT_TARGET);
+    }
+
+    /* Get functions for the GameStateManager for data collection */
+    public SessionData? GetCurrentSessionData()
+    {
+        GameStateManager.instance.GetCurrentSessionData();
+        return currentSessionData;
+    }
+
+    public TrialData? GetCurrentTrialData()
+    {
+        return currentTrialList[trialNumber];
+    }
+
+    public int GetTrialNumber()
+    {
+        return trialNumber;
     }
 }

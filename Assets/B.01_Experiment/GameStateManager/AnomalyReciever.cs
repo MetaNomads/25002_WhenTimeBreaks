@@ -23,7 +23,7 @@ public class AnomalyReciever : MonoBehaviour
         //Manage this from inheriting script
     }
 
-    private void GameStateTrigger(SessionType sessionType, int trialNumber, TrialData trialData)
+    private void GameStateTrigger(SessionData? sessionData, int trialNumber, TrialData trialData)
     {
 
 
@@ -48,7 +48,7 @@ public class AnomalyReciever : MonoBehaviour
 
     }
 
-    private void TrialStateUpdated(SessionType sessionType, int trialNumber, TrialStates trialState)
+    private void TrialStateUpdated(SessionData? sessionData, int trialNumber, TrialStates trialState)
     {
         if (AnomalyCurrentlyEnabled)
         {
