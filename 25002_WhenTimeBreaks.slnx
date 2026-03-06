@@ -1,10 +1,8 @@
 ﻿<Solution>
-  <Project Path="Piglet.csproj" />
   <Project Path="NonConvexEditor.csproj" />
   <Project Path="Assembly-CSharp.csproj" />
   <Project Path="BakeryRuntimeAssembly.csproj" />
   <Project Path="com.intothedev.multitags.csproj" />
-  <Project Path="PigletEditor.csproj" />
   <Project Path="BakeryEditorAssembly.csproj" />
   <Project Path="MLMExtensions.csproj" />
   <Project Path="Assembly-CSharp-Editor.csproj" />
