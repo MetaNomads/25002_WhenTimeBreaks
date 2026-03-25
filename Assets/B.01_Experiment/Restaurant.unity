@@ -46031,8 +46031,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 974762312}
-  - component: {fileID: 974762314}
-  - component: {fileID: 974762313}
   m_Layer: 0
   m_Name: Task
   m_TagString: Untagged
@@ -46068,96 +46066,6 @@ RectTransform:
   m_AnchoredPosition: {x: -5.64858, y: 2.33346}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &974762313
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 974762311}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2d2e582c683532a49a31dd7fd39b5b8d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ToggleOculusColorVisual
-  oculusColorVisual: {fileID: 0}
-  targetRenderer: {fileID: 0}
-  OnState:
-    Color: {r: 1, g: 1, b: 1, a: 1}
-    Curve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      - serializedVersion: 3
-        time: 1
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    Time: 0.15
-  colorProperty: _Color
---- !u!114 &974762314
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 974762311}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9085046f02f69544eb97fd06b6048fe2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Toggle
-  m_Navigation:
-    m_Mode: 3
-    m_WrapAround: 0
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
-    m_SelectOnLeft: {fileID: 0}
-    m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
-  m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
-    m_ColorMultiplier: 1
-    m_FadeDuration: 0.1
-  m_SpriteState:
-    m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
-    m_SelectedSprite: {fileID: 0}
-    m_DisabledSprite: {fileID: 0}
-  m_AnimationTriggers:
-    m_NormalTrigger: Normal
-    m_HighlightedTrigger: Highlighted
-    m_PressedTrigger: Pressed
-    m_SelectedTrigger: Selected
-    m_DisabledTrigger: Disabled
-  m_Interactable: 1
-  m_TargetGraphic: {fileID: 0}
-  toggleTransition: 1
-  graphic: {fileID: 0}
-  m_Group: {fileID: 0}
-  onValueChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_IsOn: 0
 --- !u!1 &975929317 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8132077917834765425, guid: 1c2ef09d380a15747a40a30bb6650a7c,
@@ -250568,6 +250476,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3266c3d920715b84089935c4ab019210, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1709519938 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 930664273239062527, guid: f71c322667bcbff42b82e55f95f26898,
+    type: 3}
+  m_PrefabInstance: {fileID: 1531542720}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9085046f02f69544eb97fd06b6048fe2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Toggle
 --- !u!1001 &1711414300
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -262983,6 +262903,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9098703724060182378, guid: 8dbdc2b8eb66beb4693033addfa07c9c,
         type: 3}
+      propertyPath: slots.Array.data[6].onEnter.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9098703724060182378, guid: 8dbdc2b8eb66beb4693033addfa07c9c,
+        type: 3}
       propertyPath: slots.Array.data[7].onEnter.m_PersistentCalls.m_Calls.Array.size
       value: 2
       objectReference: {fileID: 0}
@@ -269290,6 +269215,18 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 037d9886952fc5a4197b70c31500bf49, type: 3}
+--- !u!114 &2070636108 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 930664273239062527, guid: f71c322667bcbff42b82e55f95f26898,
+    type: 3}
+  m_PrefabInstance: {fileID: 1365923396}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9085046f02f69544eb97fd06b6048fe2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Toggle
 --- !u!1 &2071261760 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1474054934294384337, guid: 9641c7678e0d46748a72916d5bd3c518,
@@ -285611,13 +285548,21 @@ MonoBehaviour:
   detectionGroup: {fileID: 5519831813646909202}
   confidenceGroup: {fileID: 76992389}
   plausibilityGroup: {fileID: 4512592616237986115}
-  allGroups:
-  - {fileID: 76992389}
-  - {fileID: 456360706}
-  - {fileID: 1412352766}
-  - {fileID: 5519831813646909202}
-  - {fileID: 1097713021}
-  - {fileID: 4512592616237986115}
+  allToggles:
+  - {fileID: 1623328548}
+  - {fileID: 1509498772}
+  - {fileID: 1505947805}
+  - {fileID: 2073005420}
+  - {fileID: 292630456}
+  - {fileID: 1171954695}
+  - {fileID: 1291954028}
+  - {fileID: 7161602381293332884}
+  - {fileID: 999446752871780660}
+  - {fileID: 6749496566829142432}
+  - {fileID: 955563882306162395}
+  - {fileID: 8542134793738387617}
+  - {fileID: 2070636108}
+  - {fileID: 1709519938}
   surveyDataRecorder: {fileID: 1952240074}
   onTutorialSetup:
     m_PersistentCalls:
