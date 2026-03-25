@@ -3796,8 +3796,8 @@ Transform:
   m_GameObject: {fileID: 76992387}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.519, z: 0}
-  m_LocalScale: {x: 1.0000253, y: 1.0000257, z: 1.0000256}
+  m_LocalPosition: {x: 0, y: -0.51900005, z: 0}
+  m_LocalScale: {x: 1.0000254, y: 1.0000257, z: 1.0000256}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1960532533}
@@ -13610,7 +13610,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d2e582c683532a49a31dd7fd39b5b8d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ToggleOculusColorVisual
-  oculusColorVisual: {fileID: 0}
+  oculusColorVisual: {fileID: 292630458}
   targetRenderer: {fileID: 292630461}
   OnState:
     Color: {r: 1, g: 1, b: 1, a: 0.78431374}
@@ -70853,7 +70853,7 @@ MonoBehaviour:
   bakedScaleOffsetTerrain: []
   assetList: []
   uvOverlapAssetList: 
-  idremap: 000000000100000002000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e000000
+  idremap: 02000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f00000010000000
   usesRealtimeGI: 0
   emptyDirectionTex: {fileID: 0}
   anyVolumes: 0
@@ -220432,7 +220432,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d2e582c683532a49a31dd7fd39b5b8d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ToggleOculusColorVisual
-  oculusColorVisual: {fileID: 0}
+  oculusColorVisual: {fileID: 1171954697}
   targetRenderer: {fileID: 1171954700}
   OnState:
     Color: {r: 1, g: 1, b: 1, a: 0.78431374}
@@ -228334,7 +228334,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d2e582c683532a49a31dd7fd39b5b8d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ToggleOculusColorVisual
-  oculusColorVisual: {fileID: 0}
+  oculusColorVisual: {fileID: 1291954030}
   targetRenderer: {fileID: 1291954033}
   OnState:
     Color: {r: 1, g: 1, b: 1, a: 0.78431374}
@@ -232374,6 +232374,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1097713020}
     m_Modifications:
+    - target: {fileID: 189112569070196639, guid: f71c322667bcbff42b82e55f95f26898,
+        type: 3}
+      propertyPath: oculusColorVisual
+      value: 
+      objectReference: {fileID: 1381577271}
     - target: {fileID: 395152979553316927, guid: f71c322667bcbff42b82e55f95f26898,
         type: 3}
       propertyPath: m_text
@@ -232524,7 +232529,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: StartTutorial
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4608025070266728554, guid: f71c322667bcbff42b82e55f95f26898, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
@@ -233852,6 +233858,18 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1fd79c29716da8e439b807055ca7e675, type: 3}
+--- !u!114 &1381577271 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2359955332594882085, guid: f71c322667bcbff42b82e55f95f26898,
+    type: 3}
+  m_PrefabInstance: {fileID: 1365923396}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3266c3d920715b84089935c4ab019210, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1382059113 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6938579816372736046, guid: 0c65970758cf4cf4c83fb144b72b4198,
@@ -240374,7 +240392,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d2e582c683532a49a31dd7fd39b5b8d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ToggleOculusColorVisual
-  oculusColorVisual: {fileID: 0}
+  oculusColorVisual: {fileID: 1505947807}
   targetRenderer: {fileID: 1505947810}
   OnState:
     Color: {r: 1, g: 1, b: 1, a: 0.78431374}
@@ -242061,6 +242079,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 456360705}
     m_Modifications:
+    - target: {fileID: 189112569070196639, guid: f71c322667bcbff42b82e55f95f26898,
+        type: 3}
+      propertyPath: oculusColorVisual
+      value: 
+      objectReference: {fileID: 1709519936}
     - target: {fileID: 395152979553316927, guid: f71c322667bcbff42b82e55f95f26898,
         type: 3}
       propertyPath: m_text
@@ -242191,12 +242214,23 @@ PrefabInstance:
       propertyPath: value
       value: No
       objectReference: {fileID: 0}
+    - target: {fileID: 4608025070266728554, guid: f71c322667bcbff42b82e55f95f26898,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4733723682394702432, guid: f71c322667bcbff42b82e55f95f26898,
+        type: 3}
+      propertyPath: _updateEveryFrame
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9104901042951310638, guid: f71c322667bcbff42b82e55f95f26898,
         type: 3}
       propertyPath: m_Name
       value: StartSession
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4608025070266728554, guid: f71c322667bcbff42b82e55f95f26898, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -250522,6 +250556,18 @@ MeshRenderer:
     type: 3}
   m_PrefabInstance: {fileID: 97128074}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1709519936 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2359955332594882085, guid: f71c322667bcbff42b82e55f95f26898,
+    type: 3}
+  m_PrefabInstance: {fileID: 1531542720}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3266c3d920715b84089935c4ab019210, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1711414300
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -262691,7 +262737,7 @@ PrefabInstance:
     - target: {fileID: 7964399787071962209, guid: 8dbdc2b8eb66beb4693033addfa07c9c,
         type: 3}
       propertyPath: tutorialStimuli.Array.size
-      value: 10
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7964399787071962209, guid: 8dbdc2b8eb66beb4693033addfa07c9c,
         type: 3}
@@ -262783,6 +262829,76 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: 280b52c5fa9d5cb4da1573785bc3dfd8,
         type: 2}
+    - target: {fileID: 7964399787071962209, guid: 8dbdc2b8eb66beb4693033addfa07c9c,
+        type: 3}
+      propertyPath: stimuliSequences.Array.data[0].stimulus.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7964399787071962209, guid: 8dbdc2b8eb66beb4693033addfa07c9c,
+        type: 3}
+      propertyPath: stimuliSequences.Array.data[1].stimulus.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7964399787071962209, guid: 8dbdc2b8eb66beb4693033addfa07c9c,
+        type: 3}
+      propertyPath: stimuliSequences.Array.data[2].stimulus.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7964399787071962209, guid: 8dbdc2b8eb66beb4693033addfa07c9c,
+        type: 3}
+      propertyPath: stimuliSequences.Array.data[3].stimulus.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7964399787071962209, guid: 8dbdc2b8eb66beb4693033addfa07c9c,
+        type: 3}
+      propertyPath: stimuliSequences.Array.data[4].stimulus.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7964399787071962209, guid: 8dbdc2b8eb66beb4693033addfa07c9c,
+        type: 3}
+      propertyPath: stimuliSequences.Array.data[5].stimulus.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7964399787071962209, guid: 8dbdc2b8eb66beb4693033addfa07c9c,
+        type: 3}
+      propertyPath: 'stimuliSequences.Array.data[0].stimulus.Array.data[0]'
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7964399787071962209, guid: 8dbdc2b8eb66beb4693033addfa07c9c,
+        type: 3}
+      propertyPath: 'stimuliSequences.Array.data[1].stimulus.Array.data[1]'
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7964399787071962209, guid: 8dbdc2b8eb66beb4693033addfa07c9c,
+        type: 3}
+      propertyPath: 'stimuliSequences.Array.data[2].stimulus.Array.data[1]'
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7964399787071962209, guid: 8dbdc2b8eb66beb4693033addfa07c9c,
+        type: 3}
+      propertyPath: 'stimuliSequences.Array.data[3].stimulus.Array.data[0]'
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7964399787071962209, guid: 8dbdc2b8eb66beb4693033addfa07c9c,
+        type: 3}
+      propertyPath: 'stimuliSequences.Array.data[3].stimulus.Array.data[2]'
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7964399787071962209, guid: 8dbdc2b8eb66beb4693033addfa07c9c,
+        type: 3}
+      propertyPath: 'stimuliSequences.Array.data[4].stimulus.Array.data[0]'
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7964399787071962209, guid: 8dbdc2b8eb66beb4693033addfa07c9c,
+        type: 3}
+      propertyPath: 'stimuliSequences.Array.data[4].stimulus.Array.data[1]'
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7964399787071962209, guid: 8dbdc2b8eb66beb4693033addfa07c9c,
+        type: 3}
+      propertyPath: 'stimuliSequences.Array.data[5].stimulus.Array.data[1]'
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 7964399787071962209, guid: 8dbdc2b8eb66beb4693033addfa07c9c,
         type: 3}
       propertyPath: 'sessionGroups.Array.data[0].anomalyObjects.Array.data[0]'
@@ -269350,7 +269466,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d2e582c683532a49a31dd7fd39b5b8d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ToggleOculusColorVisual
-  oculusColorVisual: {fileID: 0}
+  oculusColorVisual: {fileID: 2073005422}
   targetRenderer: {fileID: 2073005425}
   OnState:
     Color: {r: 1, g: 1, b: 1, a: 0.78431374}
@@ -281142,7 +281258,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d2e582c683532a49a31dd7fd39b5b8d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ToggleOculusColorVisual
-  oculusColorVisual: {fileID: 0}
+  oculusColorVisual: {fileID: 3954402991468721510}
   targetRenderer: {fileID: 3411418647962469544}
   OnState:
     Color: {r: 1, g: 1, b: 1, a: 0.78431374}
@@ -285495,7 +285611,13 @@ MonoBehaviour:
   detectionGroup: {fileID: 5519831813646909202}
   confidenceGroup: {fileID: 76992389}
   plausibilityGroup: {fileID: 4512592616237986115}
-  allGroups: []
+  allGroups:
+  - {fileID: 76992389}
+  - {fileID: 456360706}
+  - {fileID: 1412352766}
+  - {fileID: 5519831813646909202}
+  - {fileID: 1097713021}
+  - {fileID: 4512592616237986115}
   surveyDataRecorder: {fileID: 1952240074}
   onTutorialSetup:
     m_PersistentCalls:
@@ -288411,7 +288533,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d2e582c683532a49a31dd7fd39b5b8d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ToggleOculusColorVisual
-  oculusColorVisual: {fileID: 0}
+  oculusColorVisual: {fileID: 5216840941454479575}
   targetRenderer: {fileID: 4667180710015244399}
   OnState:
     Color: {r: 1, g: 1, b: 1, a: 0.78431374}
@@ -291639,7 +291761,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d2e582c683532a49a31dd7fd39b5b8d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ToggleOculusColorVisual
-  oculusColorVisual: {fileID: 0}
+  oculusColorVisual: {fileID: 2543737580057306209}
   targetRenderer: {fileID: 7827422011965007946}
   OnState:
     Color: {r: 1, g: 1, b: 1, a: 0.78431374}
@@ -291689,7 +291811,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d2e582c683532a49a31dd7fd39b5b8d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ToggleOculusColorVisual
-  oculusColorVisual: {fileID: 0}
+  oculusColorVisual: {fileID: 3296683962433073440}
   targetRenderer: {fileID: 1293164315425867135}
   OnState:
     Color: {r: 1, g: 1, b: 1, a: 0.78431374}
@@ -298201,7 +298323,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d2e582c683532a49a31dd7fd39b5b8d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ToggleOculusColorVisual
-  oculusColorVisual: {fileID: 0}
+  oculusColorVisual: {fileID: 4286304043172211645}
   targetRenderer: {fileID: 986393358102072144}
   OnState:
     Color: {r: 1, g: 1, b: 1, a: 0.78431374}
@@ -301203,9 +301325,9 @@ Transform:
   m_Children:
   - {fileID: 1110522432}
   - {fileID: 1509498771}
-  - {fileID: 76992388}
   - {fileID: 768555092735397342}
   - {fileID: 7359292918321592212}
+  - {fileID: 76992388}
   m_Father: {fileID: 885022057424418841}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &6963540885185727548 stripped
