@@ -17,6 +17,8 @@ TagManager:
   - QDSUIToggleBorderlessButton
   - QDSUIBackplateGradient
   - QDSUISection
+  - Cup
+  - SurveillanceCamera
   layers:
   - Default
   - TransparentFX
@@ -32,7 +34,7 @@ TagManager:
   - Architectural
   - Furniture
   - Overlay UI
-  - 
+  - SurveillanceCam
   - 
   - 
   - 
