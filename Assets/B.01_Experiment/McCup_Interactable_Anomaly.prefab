@@ -1023,11 +1023,29 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3576844883549686889, guid: 087ffa630d6b86e4b8112d4da10222b4,
+        type: 3}
+      propertyPath: _handGhostProvider
+      value: 
+      objectReference: {fileID: 11400000, guid: 9b9df4f150839de48af887d742aabf53,
+        type: 2}
+    - target: {fileID: 4848345877787963816, guid: 087ffa630d6b86e4b8112d4da10222b4,
+        type: 3}
+      propertyPath: _handGhostProvider
+      value: 
+      objectReference: {fileID: 11400000, guid: 9b9df4f150839de48af887d742aabf53,
+        type: 2}
     - target: {fileID: 5043491530913580458, guid: 087ffa630d6b86e4b8112d4da10222b4,
         type: 3}
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5061919027695172798, guid: 087ffa630d6b86e4b8112d4da10222b4,
+        type: 3}
+      propertyPath: _handGhostProvider
+      value: 
+      objectReference: {fileID: 11400000, guid: 9b9df4f150839de48af887d742aabf53,
+        type: 2}
     - target: {fileID: 5387470957234308062, guid: 087ffa630d6b86e4b8112d4da10222b4,
         type: 3}
       propertyPath: events.Array.size
@@ -1221,6 +1239,18 @@ PrefabInstance:
       propertyPath: events.Array.data[2].onEnter.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: MetaFrame.State.StateDefinition, Assembly-CSharp
       objectReference: {fileID: 0}
+    - target: {fileID: 5681484927915297803, guid: 087ffa630d6b86e4b8112d4da10222b4,
+        type: 3}
+      propertyPath: _handGhostProvider
+      value: 
+      objectReference: {fileID: 11400000, guid: 9b9df4f150839de48af887d742aabf53,
+        type: 2}
+    - target: {fileID: 5746578697143513224, guid: 087ffa630d6b86e4b8112d4da10222b4,
+        type: 3}
+      propertyPath: _handGhostProvider
+      value: 
+      objectReference: {fileID: 11400000, guid: 9b9df4f150839de48af887d742aabf53,
+        type: 2}
     - target: {fileID: 6103484451317862095, guid: 087ffa630d6b86e4b8112d4da10222b4,
         type: 3}
       propertyPath: _whenSelect.m_PersistentCalls.m_Calls.Array.size
@@ -1296,6 +1326,18 @@ PrefabInstance:
       propertyPath: _whenSelect.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 6493727385485360330, guid: 087ffa630d6b86e4b8112d4da10222b4,
+        type: 3}
+      propertyPath: _handGhostProvider
+      value: 
+      objectReference: {fileID: 11400000, guid: 9b9df4f150839de48af887d742aabf53,
+        type: 2}
+    - target: {fileID: 6872356537771593595, guid: 087ffa630d6b86e4b8112d4da10222b4,
+        type: 3}
+      propertyPath: _handGhostProvider
+      value: 
+      objectReference: {fileID: 11400000, guid: 9b9df4f150839de48af887d742aabf53,
+        type: 2}
     - target: {fileID: 7056523603998171270, guid: 087ffa630d6b86e4b8112d4da10222b4,
         type: 3}
       propertyPath: m_Name
@@ -1326,6 +1368,12 @@ PrefabInstance:
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7539795697269209442, guid: 087ffa630d6b86e4b8112d4da10222b4,
+        type: 3}
+      propertyPath: _handGhostProvider
+      value: 
+      objectReference: {fileID: 11400000, guid: 9b9df4f150839de48af887d742aabf53,
+        type: 2}
     - target: {fileID: 7684863315835107900, guid: 087ffa630d6b86e4b8112d4da10222b4,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1376,6 +1424,24 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8288685749032426345, guid: 087ffa630d6b86e4b8112d4da10222b4,
+        type: 3}
+      propertyPath: _handGhostProvider
+      value: 
+      objectReference: {fileID: 11400000, guid: 9b9df4f150839de48af887d742aabf53,
+        type: 2}
+    - target: {fileID: 8827376785970347926, guid: 087ffa630d6b86e4b8112d4da10222b4,
+        type: 3}
+      propertyPath: _handGhostProvider
+      value: 
+      objectReference: {fileID: 11400000, guid: 9b9df4f150839de48af887d742aabf53,
+        type: 2}
+    - target: {fileID: 9206065617382990536, guid: 087ffa630d6b86e4b8112d4da10222b4,
+        type: 3}
+      propertyPath: _handGhostProvider
+      value: 
+      objectReference: {fileID: 11400000, guid: 9b9df4f150839de48af887d742aabf53,
+        type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 5043491530913580458, guid: 087ffa630d6b86e4b8112d4da10222b4, type: 3}

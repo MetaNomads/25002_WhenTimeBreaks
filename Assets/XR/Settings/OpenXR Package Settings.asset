@@ -508,19 +508,19 @@ MonoBehaviour:
   - {fileID: 2184322559081633396}
   - {fileID: 8092034379127144912}
   customLoaderName: 
-  m_renderMode: 0
-  m_latencyOptimization: 0
+  m_renderMode: 1
+  m_latencyOptimization: 1
   m_autoColorSubmissionMode: 1
   m_colorSubmissionModes:
     m_List: 00000000
-  m_depthSubmissionMode: 0
+  m_depthSubmissionMode: 2
   m_spacewarpMotionVectorTextureFormat: 0
   m_optimizeBufferDiscards: 0
   m_symmetricProjection: 0
   m_optimizeMultiviewRenderRegions: 0
   m_multiviewRenderRegionsOptimizationMode: 0
   m_hasMigratedMultiviewRenderRegionSetting: 1
-  m_foveatedRenderingApi: 0
+  m_foveatedRenderingApi: 1
   m_useOpenXRPredictedTime: 1
 --- !u!114 &-5414953304658351765
 MonoBehaviour:
@@ -1698,19 +1698,19 @@ MonoBehaviour:
   - {fileID: -1895852317745646579}
   - {fileID: -8336141983034919025}
   customLoaderName: 
-  m_renderMode: 0
+  m_renderMode: 1
   m_latencyOptimization: 1
   m_autoColorSubmissionMode: 1
   m_colorSubmissionModes:
     m_List: 00000000
-  m_depthSubmissionMode: 0
+  m_depthSubmissionMode: 2
   m_spacewarpMotionVectorTextureFormat: 0
   m_optimizeBufferDiscards: 0
   m_symmetricProjection: 0
   m_optimizeMultiviewRenderRegions: 0
   m_multiviewRenderRegionsOptimizationMode: 0
   m_hasMigratedMultiviewRenderRegionSetting: 1
-  m_foveatedRenderingApi: 0
+  m_foveatedRenderingApi: 1
   m_useOpenXRPredictedTime: 1
 --- !u!114 &8405279609005945974
 MonoBehaviour:
@@ -1751,19 +1751,19 @@ MonoBehaviour:
   - {fileID: -8809187510548380750}
   - {fileID: -7589303532477186306}
   customLoaderName: 
-  m_renderMode: 0
+  m_renderMode: 1
   m_latencyOptimization: 1
   m_autoColorSubmissionMode: 1
   m_colorSubmissionModes:
     m_List: 00000000
-  m_depthSubmissionMode: 0
+  m_depthSubmissionMode: 2
   m_spacewarpMotionVectorTextureFormat: 0
   m_optimizeBufferDiscards: 0
   m_symmetricProjection: 0
   m_optimizeMultiviewRenderRegions: 0
   m_multiviewRenderRegionsOptimizationMode: 0
   m_hasMigratedMultiviewRenderRegionSetting: 1
-  m_foveatedRenderingApi: 0
+  m_foveatedRenderingApi: 1
   m_useOpenXRPredictedTime: 1
 --- !u!114 &8757128481059944098
 MonoBehaviour:
