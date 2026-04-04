@@ -263917,6 +263917,40 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7964399787071962209, guid: 8dbdc2b8eb66beb4693033addfa07c9c,
+        type: 3}
+      propertyPath: subjectID
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7964399787071962209, guid: 8dbdc2b8eb66beb4693033addfa07c9c,
+        type: 3}
+      propertyPath: tutorialStimuli.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7964399787071962209, guid: 8dbdc2b8eb66beb4693033addfa07c9c,
+        type: 3}
+      propertyPath: 'tutorialStimuli.Array.data[3]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 280b52c5fa9d5cb4da1573785bc3dfd8,
+        type: 2}
+    - target: {fileID: 7964399787071962209, guid: 8dbdc2b8eb66beb4693033addfa07c9c,
+        type: 3}
+      propertyPath: 'tutorialStimuli.Array.data[4]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 280b52c5fa9d5cb4da1573785bc3dfd8,
+        type: 2}
+    - target: {fileID: 7964399787071962209, guid: 8dbdc2b8eb66beb4693033addfa07c9c,
+        type: 3}
+      propertyPath: 'sessionGroups.Array.data[1].anomalyObjects.Array.data[2]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 23fae420d9451a442bec13864453162a,
+        type: 2}
+    - target: {fileID: 7964399787071962209, guid: 8dbdc2b8eb66beb4693033addfa07c9c,
+        type: 3}
+      propertyPath: 'sessionGroups.Array.data[2].anomalyObjects.Array.data[2]'
+      value: 
+      objectReference: {fileID: 11400000, guid: ec1cf05ed90ab0e4bb9119db9e7682e0,
+        type: 2}
     - target: {fileID: 9098703724060182378, guid: 8dbdc2b8eb66beb4693033addfa07c9c,
         type: 3}
       propertyPath: slots.Array.data[0].onExit.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -304436,6 +304470,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5429679054795945663, guid: 6ce37c6bd0965484796c438d184297cf,
+        type: 3}
+      propertyPath: m_Height
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5429679054795945663, guid: 6ce37c6bd0965484796c438d184297cf,
+        type: 3}
+      propertyPath: m_Radius
+      value: 0.18
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
