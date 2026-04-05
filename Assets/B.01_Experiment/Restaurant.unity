@@ -263917,6 +263917,82 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7110046693817067065, guid: 8dbdc2b8eb66beb4693033addfa07c9c,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7964399787071962209, guid: 8dbdc2b8eb66beb4693033addfa07c9c,
+        type: 3}
+      propertyPath: tutorialStimuli.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7964399787071962209, guid: 8dbdc2b8eb66beb4693033addfa07c9c,
+        type: 3}
+      propertyPath: 'tutorialStimuli.Array.data[0]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 280b52c5fa9d5cb4da1573785bc3dfd8,
+        type: 2}
+    - target: {fileID: 7964399787071962209, guid: 8dbdc2b8eb66beb4693033addfa07c9c,
+        type: 3}
+      propertyPath: 'tutorialStimuli.Array.data[1]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 280b52c5fa9d5cb4da1573785bc3dfd8,
+        type: 2}
+    - target: {fileID: 7964399787071962209, guid: 8dbdc2b8eb66beb4693033addfa07c9c,
+        type: 3}
+      propertyPath: 'tutorialStimuli.Array.data[2]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 280b52c5fa9d5cb4da1573785bc3dfd8,
+        type: 2}
+    - target: {fileID: 7964399787071962209, guid: 8dbdc2b8eb66beb4693033addfa07c9c,
+        type: 3}
+      propertyPath: 'tutorialStimuli.Array.data[3]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 280b52c5fa9d5cb4da1573785bc3dfd8,
+        type: 2}
+    - target: {fileID: 7964399787071962209, guid: 8dbdc2b8eb66beb4693033addfa07c9c,
+        type: 3}
+      propertyPath: 'tutorialStimuli.Array.data[4]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 280b52c5fa9d5cb4da1573785bc3dfd8,
+        type: 2}
+    - target: {fileID: 7964399787071962209, guid: 8dbdc2b8eb66beb4693033addfa07c9c,
+        type: 3}
+      propertyPath: 'tutorialStimuli.Array.data[5]'
+      value: 
+      objectReference: {fileID: 11400000, guid: e1783ace61eada240a91864cf3a38d75,
+        type: 2}
+    - target: {fileID: 7964399787071962209, guid: 8dbdc2b8eb66beb4693033addfa07c9c,
+        type: 3}
+      propertyPath: 'tutorialStimuli.Array.data[6]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 23fae420d9451a442bec13864453162a,
+        type: 2}
+    - target: {fileID: 7964399787071962209, guid: 8dbdc2b8eb66beb4693033addfa07c9c,
+        type: 3}
+      propertyPath: 'tutorialStimuli.Array.data[7]'
+      value: 
+      objectReference: {fileID: 11400000, guid: d8b35f726b04cdd4a9c7b43314d9c740,
+        type: 2}
+    - target: {fileID: 7964399787071962209, guid: 8dbdc2b8eb66beb4693033addfa07c9c,
+        type: 3}
+      propertyPath: 'tutorialStimuli.Array.data[8]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 47fe72da1a3e02c4695c64a07d44abf0,
+        type: 2}
+    - target: {fileID: 7964399787071962209, guid: 8dbdc2b8eb66beb4693033addfa07c9c,
+        type: 3}
+      propertyPath: 'tutorialStimuli.Array.data[9]'
+      value: 
+      objectReference: {fileID: 11400000, guid: ec1cf05ed90ab0e4bb9119db9e7682e0,
+        type: 2}
+    - target: {fileID: 7964399787071962209, guid: 8dbdc2b8eb66beb4693033addfa07c9c,
+        type: 3}
+      propertyPath: 'tutorialStimuli.Array.data[10]'
+      value: 
+      objectReference: {fileID: 11400000, guid: d70861705a9d2ef498ad41515776503b,
+        type: 2}
     - target: {fileID: 9098703724060182378, guid: 8dbdc2b8eb66beb4693033addfa07c9c,
         type: 3}
       propertyPath: slots.Array.data[0].onExit.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -268496,7 +268572,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67d7ae032d823944ab172200b3b0f7f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DelayedEvent
-  delay: 0.5
+  delay: 0.2
   onStart:
     m_PersistentCalls:
       m_Calls: []
@@ -292574,7 +292650,7 @@ PrefabInstance:
     - target: {fileID: 5033563425356609743, guid: 4199a03d71b49a9428dcfe675fe55350,
         type: 3}
       propertyPath: delay
-      value: 1.5
+      value: 1.7
       objectReference: {fileID: 0}
     - target: {fileID: 5033563425356609743, guid: 4199a03d71b49a9428dcfe675fe55350,
         type: 3}
