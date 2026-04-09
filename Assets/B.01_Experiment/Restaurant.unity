@@ -228904,11 +228904,7 @@ PrefabInstance:
     - {fileID: 4608025070266728554, guid: f71c322667bcbff42b82e55f95f26898, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 4578757549960673978, guid: f71c322667bcbff42b82e55f95f26898,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f71c322667bcbff42b82e55f95f26898, type: 3}
 --- !u!4 &1309530253 stripped
 Transform:
@@ -275800,8 +275796,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1515347883840667561}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.26768193, y: -0, z: -0, w: 0.9635074}
-  m_LocalPosition: {x: 6.852, y: -0.166, z: -10.769}
+  m_LocalRotation: {x: 0.42949837, y: -0, z: -0, w: 0.90306765}
+  m_LocalPosition: {x: 6.852, y: -0.083, z: -10.781}
   m_LocalScale: {x: 1.2723469, y: 1.2723467, z: 1.2723467}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -275812,7 +275808,7 @@ Transform:
   - {fileID: 456360705}
   - {fileID: 1412352765}
   m_Father: {fileID: 974762312}
-  m_LocalEulerAnglesHint: {x: 31.053, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 50.871, y: 0, z: 0}
 --- !u!23 &886255766697388728 stripped
 MeshRenderer:
   m_CorrespondingSourceObject: {fileID: 4848059720297886111, guid: 56d918cb797ca0f4199331414bd501e9,
@@ -292340,6 +292336,11 @@ PrefabInstance:
       propertyPath: OnEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 2031694175}
+    - target: {fileID: 8267654542049838469, guid: 4199a03d71b49a9428dcfe675fe55350,
+        type: 3}
+      propertyPath: colliderZones.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8267654542049838469, guid: 4199a03d71b49a9428dcfe675fe55350,
         type: 3}
       propertyPath: 'colliderZones.Array.data[0]'
