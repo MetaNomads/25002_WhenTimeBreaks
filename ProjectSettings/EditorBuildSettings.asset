@@ -11,6 +11,8 @@ EditorBuildSettings:
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 3c87430cdb08dba41bbea8893e345b3a,
       type: 2}
+    com.unity.adaptivePerformance.basic.provider_settings: {fileID: 11400000, guid: 27e9f7d5065ae82408973058a4148318,
+      type: 2}
     com.unity.adaptiveperformance.google.android.provider_settings: {fileID: 11400000,
       guid: 7592327f31cef4646bb7eb96f7a4a065, type: 2}
     com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: febb4d88aacfd234d9812f2f57a21142,
@@ -21,4 +23,3 @@ EditorBuildSettings:
       type: 2}
     com.unity.xr.openxr.settings4: {fileID: 11400000, guid: 38035f40779746f488331742d33e192d,
       type: 2}
-  m_UseUCBPForAssetBundles: 0
