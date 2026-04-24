@@ -232637,8 +232637,8 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2133561455}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!135 &1273707110
-SphereCollider:
+--- !u!65 &1273707110
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -232652,12 +232652,12 @@ SphereCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Radius: 0.45
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 0.7553679, y: 0.5252309, z: 0.6521492}
+  m_Center: {x: -0.025754511, y: 0.23738456, z: 0.002350804}
 --- !u!1 &1274027635 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1120553764569666234, guid: 9641c7678e0d46748a72916d5bd3c518,
@@ -272649,7 +272649,7 @@ PrefabInstance:
     - target: {fileID: 7964399787071962209, guid: 8dbdc2b8eb66beb4693033addfa07c9c,
         type: 3}
       propertyPath: subjectID
-      value: 14
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 7964399787071962209, guid: 8dbdc2b8eb66beb4693033addfa07c9c,
         type: 3}
@@ -302205,7 +302205,7 @@ PrefabInstance:
         type: 3}
       propertyPath: 'zoneColliders.Array.data[0]'
       value: 
-      objectReference: {fileID: 1273707110}
+      objectReference: {fileID: 0}
     - target: {fileID: 1350038181383407745, guid: 4199a03d71b49a9428dcfe675fe55350,
         type: 3}
       propertyPath: 'colliderObjects.Array.data[0]'
@@ -303511,7 +303511,7 @@ PrefabInstance:
         type: 3}
       propertyPath: 'colliderZones.Array.data[0]'
       value: 
-      objectReference: {fileID: 1273707110}
+      objectReference: {fileID: 0}
     - target: {fileID: 7905027161920367710, guid: 4199a03d71b49a9428dcfe675fe55350,
         type: 3}
       propertyPath: 'zoneColliders.Array.data[0]'
