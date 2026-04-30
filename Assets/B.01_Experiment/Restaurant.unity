@@ -49120,8 +49120,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "I thought about it, but not about troubleshooting \u2014 I questioned
-    the intention or the task itself"
+  m_text: "Something deliberate \u2014 not a simulation error\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: eb44739c484b1b54bbc1a0d4d9dd1a50, type: 2}
   m_sharedMaterial: {fileID: -5839354330806206608, guid: eb44739c484b1b54bbc1a0d4d9dd1a50,
@@ -251293,7 +251292,11 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4578757549960673978, guid: f71c322667bcbff42b82e55f95f26898,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: f71c322667bcbff42b82e55f95f26898, type: 3}
 --- !u!4 &1509498771 stripped
 Transform:
@@ -253949,8 +253952,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Q4: How confident are you that what you saw was a genuine AI simulation
-    problem \u2014 and not a misperception, your own mistake, or a VR glitch? "
+  m_text: 'Q4: Was what you saw a genuine simulation problem or a misperception,
+    mistake, or glitch?'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -254016,7 +254019,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 71.76671, y: 56.30169, z: 193.89456, w: 0}
+  m_margin: {x: 71.76671, y: 56.30169, z: 174.44742, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -257583,7 +257586,11 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4578757549960673978, guid: f71c322667bcbff42b82e55f95f26898,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: f71c322667bcbff42b82e55f95f26898, type: 3}
 --- !u!114 &1623328548 stripped
 MonoBehaviour:
@@ -277044,7 +277051,7 @@ PrefabInstance:
     - target: {fileID: 7964399787071962209, guid: 8dbdc2b8eb66beb4693033addfa07c9c,
         type: 3}
       propertyPath: subjectID
-      value: 23
+      value: 26
       objectReference: {fileID: 0}
     - target: {fileID: 7964399787071962209, guid: 8dbdc2b8eb66beb4693033addfa07c9c,
         type: 3}
@@ -291478,8 +291485,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Q3: When you noticed the cup''s behavior, how engaged were you in trying
-    to evaluate it?  '
+  m_text: 'Q3: When you noticed the cup''s behavior, how would you best describe
+    it?'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -291842,8 +291849,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "I noticed but did not think about it \u2014 I just kept going with the
-    task"
+  m_text: 'Something irrelevant to the task
+
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: eb44739c484b1b54bbc1a0d4d9dd1a50, type: 2}
   m_sharedMaterial: {fileID: -5839354330806206608, guid: eb44739c484b1b54bbc1a0d4d9dd1a50,
@@ -313685,7 +313693,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: I actively tried to evaluate whether it followed real-world rules
+  m_text: A potential simulation problem worth evaluating
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: eb44739c484b1b54bbc1a0d4d9dd1a50, type: 2}
   m_sharedMaterial: {fileID: -5839354330806206608, guid: eb44739c484b1b54bbc1a0d4d9dd1a50,
@@ -313752,7 +313760,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 1
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: -61.300255, w: 0}
+  m_margin: {x: 0, y: 0, z: -63.264534, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   _SortingLayer: 0
