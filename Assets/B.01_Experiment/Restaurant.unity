@@ -9602,7 +9602,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 1
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: -50.720165, w: 0}
+  m_margin: {x: 0, y: 0, z: -85.51901, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   _SortingLayer: 0
@@ -44053,7 +44053,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 1
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: -52.816986, w: 0}
+  m_margin: {x: 0, y: 0, z: -78.83205, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   _SortingLayer: 0
@@ -251885,7 +251885,7 @@ PrefabInstance:
     - target: {fileID: 4608025070266728554, guid: f71c322667bcbff42b82e55f95f26898,
         type: 3}
       propertyPath: value
-      value: No
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6244858508108324223, guid: f71c322667bcbff42b82e55f95f26898,
         type: 3}
@@ -258200,7 +258200,7 @@ PrefabInstance:
     - target: {fileID: 4608025070266728554, guid: f71c322667bcbff42b82e55f95f26898,
         type: 3}
       propertyPath: value
-      value: Yes
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6244858508108324223, guid: f71c322667bcbff42b82e55f95f26898,
         type: 3}
@@ -299999,8 +299999,12 @@ MonoBehaviour:
   q3Group: {fileID: 4512592616237986115}
   q4Group: {fileID: 194497288}
   q5Group: {fileID: 1854997637}
-  q1SkipValue: No
+  q1SkipValue: 0
   q3SkipValue: 1
+  q4ShowQ5Values:
+  - 3
+  - 4
+  - 5
   surveyDataRecorder: {fileID: 1952240074}
   experimentDataRecorder: {fileID: 1952240077}
   experimentController: {fileID: 2031694173}
