@@ -4242,7 +4242,7 @@ Transform:
   m_GameObject: {fileID: 71091779}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.67, y: -0.001, z: -0}
+  m_LocalPosition: {x: -0.8, y: -0.001, z: -0}
   m_LocalScale: {x: 0.16571341, y: 0.16571341, z: 0.16571346}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -9925,8 +9925,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Retraining needed \u2014 the training data must be fully replaced with
-    real-world knowledge "
+  m_text: "Full retraining needed \u2014 training data must be replaced "
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: eb44739c484b1b54bbc1a0d4d9dd1a50, type: 2}
   m_sharedMaterial: {fileID: -5839354330806206608, guid: eb44739c484b1b54bbc1a0d4d9dd1a50,
@@ -9993,7 +9992,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 1
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: -67.75864, w: 0}
+  m_margin: {x: 0, y: 0, z: -75.87804, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   _SortingLayer: 0
@@ -10621,7 +10620,7 @@ Transform:
   m_GameObject: {fileID: 194497286}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.274, z: 0.256}
+  m_LocalPosition: {x: 0, y: 0.3166, z: 0.256}
   m_LocalScale: {x: 0.16520582, y: 0.16520573, z: 0.16520576}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -13328,7 +13327,7 @@ Transform:
   m_GameObject: {fileID: 231892348}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.67, y: -0.3520017, z: 0.0000015906109}
+  m_LocalPosition: {x: -0.8, y: -0.3520017, z: 0.0000015906109}
   m_LocalScale: {x: 0.16571341, y: 0.16571341, z: 0.16571346}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -19352,7 +19351,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Cannot tell \u2014 unclear what modification would fix it "
+  m_text: 'Cannot tell '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: eb44739c484b1b54bbc1a0d4d9dd1a50, type: 2}
   m_sharedMaterial: {fileID: -5839354330806206608, guid: eb44739c484b1b54bbc1a0d4d9dd1a50,
@@ -34447,8 +34446,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: -0.355}
-  m_SizeDelta: {x: 600, y: 560}
+  m_AnchoredPosition: {x: 0, y: -0.448}
+  m_SizeDelta: {x: 700, y: 500}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &620520164
 PrefabInstance:
@@ -46688,8 +46687,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 26
-  m_fontSizeBase: 26
+  m_fontSize: 32
+  m_fontSizeBase: 32
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -47018,7 +47017,7 @@ Transform:
   m_GameObject: {fileID: 861013916}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.67, y: -0.132, z: 0}
+  m_LocalPosition: {x: -0.8, y: -0.132, z: 0}
   m_LocalScale: {x: 0.16571341, y: 0.16571341, z: 0.16571346}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -47458,7 +47457,7 @@ Transform:
   m_GameObject: {fileID: 862981733}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.6699999, y: -0.79200166, z: 0.000006402319}
+  m_LocalPosition: {x: -0.8, y: -0.79200166, z: 0.000006402319}
   m_LocalScale: {x: 0.16571341, y: 0.16571341, z: 0.16571346}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -51537,7 +51536,7 @@ Transform:
   m_GameObject: {fileID: 925338059}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.157, z: 0.256}
+  m_LocalPosition: {x: 0, y: 0.1996, z: 0.256}
   m_LocalScale: {x: 0.16520582, y: 0.16520573, z: 0.16520576}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -56549,7 +56548,7 @@ Transform:
   m_GameObject: {fileID: 1002844999}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.6699999, y: -1.0120016, z: 0.000006402319}
+  m_LocalPosition: {x: -0.8, y: -1.0120016, z: 0.000006402319}
   m_LocalScale: {x: 0.16571341, y: 0.16571341, z: 0.16571346}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -231178,7 +231177,7 @@ Transform:
   m_GameObject: {fileID: 1179363978}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.6699999, y: -0.57199526, z: 0.000006402319}
+  m_LocalPosition: {x: -0.8, y: -0.57199526, z: 0.000006402319}
   m_LocalScale: {x: 0.16571341, y: 0.16571341, z: 0.16571346}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -243047,17 +243046,17 @@ PrefabInstance:
     - target: {fileID: 395152979553316927, guid: f71c322667bcbff42b82e55f95f26898,
         type: 3}
       propertyPath: m_text
-      value: wait for instruction
+      value: don't press, wait for instruction
       objectReference: {fileID: 0}
     - target: {fileID: 395152979553316927, guid: f71c322667bcbff42b82e55f95f26898,
         type: 3}
       propertyPath: m_fontSize
-      value: 24
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 395152979553316927, guid: f71c322667bcbff42b82e55f95f26898,
         type: 3}
       propertyPath: m_fontSizeBase
-      value: 24
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 930664273239062527, guid: f71c322667bcbff42b82e55f95f26898,
         type: 3}
@@ -243207,12 +243206,12 @@ PrefabInstance:
     - target: {fileID: 4503527458959189172, guid: f71c322667bcbff42b82e55f95f26898,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 2.75
+      value: 3.5
       objectReference: {fileID: 0}
     - target: {fileID: 4503527458959189172, guid: f71c322667bcbff42b82e55f95f26898,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.75
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 4608025070266728554, guid: f71c322667bcbff42b82e55f95f26898,
         type: 3}
@@ -243242,12 +243241,12 @@ PrefabInstance:
     - target: {fileID: 8416238127751384763, guid: f71c322667bcbff42b82e55f95f26898,
         type: 3}
       propertyPath: _width
-      value: 2.75
+      value: 3.5
       objectReference: {fileID: 0}
     - target: {fileID: 8416238127751384763, guid: f71c322667bcbff42b82e55f95f26898,
         type: 3}
       propertyPath: _height
-      value: 0.75
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 8416238127751384763, guid: f71c322667bcbff42b82e55f95f26898,
         type: 3}
@@ -247554,7 +247553,7 @@ Transform:
   m_GameObject: {fileID: 1438049474}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.67, y: -0.4409977, z: 0.00000561089}
+  m_LocalPosition: {x: -0.8, y: -0.4409977, z: 0.00000561089}
   m_LocalScale: {x: 0.16571341, y: 0.16571341, z: 0.16571346}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -248461,8 +248460,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Generation error \u2014 the training data is correct but the model generated
-    the wrong output"
+  m_text: "Not a data issue \u2014 the model generated it incorrectly "
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: eb44739c484b1b54bbc1a0d4d9dd1a50, type: 2}
   m_sharedMaterial: {fileID: -5839354330806206608, guid: eb44739c484b1b54bbc1a0d4d9dd1a50,
@@ -248529,7 +248527,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 1
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: -66.22652, w: 0}
+  m_margin: {x: 0, y: 0, z: -72.259674, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   _SortingLayer: 0
@@ -253367,27 +253365,27 @@ PrefabInstance:
     - target: {fileID: 395152979553316927, guid: f71c322667bcbff42b82e55f95f26898,
         type: 3}
       propertyPath: m_text
-      value: wait for instruction
+      value: don't press, wait for instruction
       objectReference: {fileID: 0}
     - target: {fileID: 395152979553316927, guid: f71c322667bcbff42b82e55f95f26898,
         type: 3}
       propertyPath: m_fontSize
-      value: 25
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 395152979553316927, guid: f71c322667bcbff42b82e55f95f26898,
         type: 3}
       propertyPath: m_margin.x
-      value: -1.1577482
+      value: -14.823703
       objectReference: {fileID: 0}
     - target: {fileID: 395152979553316927, guid: f71c322667bcbff42b82e55f95f26898,
         type: 3}
       propertyPath: m_margin.z
-      value: -1.5480766
+      value: -15.09547
       objectReference: {fileID: 0}
     - target: {fileID: 395152979553316927, guid: f71c322667bcbff42b82e55f95f26898,
         type: 3}
       propertyPath: m_fontSizeBase
-      value: 25
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 930664273239062527, guid: f71c322667bcbff42b82e55f95f26898,
         type: 3}
@@ -253507,12 +253505,12 @@ PrefabInstance:
     - target: {fileID: 4503527458959189172, guid: f71c322667bcbff42b82e55f95f26898,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 2.5
+      value: 3.5
       objectReference: {fileID: 0}
     - target: {fileID: 4503527458959189172, guid: f71c322667bcbff42b82e55f95f26898,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 1
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 4503527458959189172, guid: f71c322667bcbff42b82e55f95f26898,
         type: 3}
@@ -253567,7 +253565,12 @@ PrefabInstance:
     - target: {fileID: 8416238127751384763, guid: f71c322667bcbff42b82e55f95f26898,
         type: 3}
       propertyPath: _width
-      value: 2.5
+      value: 3.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8416238127751384763, guid: f71c322667bcbff42b82e55f95f26898,
+        type: 3}
+      propertyPath: _height
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 8416238127751384763, guid: f71c322667bcbff42b82e55f95f26898,
         type: 3}
@@ -253583,6 +253586,26 @@ PrefabInstance:
         type: 3}
       propertyPath: _color.r
       value: 0.26666668
+      objectReference: {fileID: 0}
+    - target: {fileID: 8416238127751384763, guid: f71c322667bcbff42b82e55f95f26898,
+        type: 3}
+      propertyPath: _radiusTopLeft
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8416238127751384763, guid: f71c322667bcbff42b82e55f95f26898,
+        type: 3}
+      propertyPath: _radiusTopRight
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8416238127751384763, guid: f71c322667bcbff42b82e55f95f26898,
+        type: 3}
+      propertyPath: _radiusBottomLeft
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8416238127751384763, guid: f71c322667bcbff42b82e55f95f26898,
+        type: 3}
+      propertyPath: _radiusBottomRight
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 8422924365260893253, guid: f71c322667bcbff42b82e55f95f26898,
         type: 3}
@@ -254612,7 +254635,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1548714834}
   m_LocalRotation: {x: -0, y: -0, z: -3.637978e-12, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0.48992327}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1.008843, y: 1.008843, z: 1.0088433}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -254620,7 +254643,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: -36, y: -129.3}
+  m_AnchoredPosition: {x: -36, y: -96}
   m_SizeDelta: {x: 792.99, y: 130}
   m_Pivot: {x: 0, y: 0}
 --- !u!114 &1548714836
@@ -254644,7 +254667,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "Q4: How confident are you that what you saw was a genuine AI output \u2014
-    rather than a misperception, your own mistake, or a VR glitch? "
+    rather than a mistake? "
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -254710,7 +254733,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 71.76671, y: 56.30169, z: 229.39389, w: 0}
+  m_margin: {x: 71.76671, y: 56.30169, z: 95.335175, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -256006,7 +256029,7 @@ Transform:
   m_GameObject: {fileID: 1586269546}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.67, y: -0.8809978, z: 0.00000561089}
+  m_LocalPosition: {x: -0.8, y: -0.8809978, z: 0.00000561089}
   m_LocalScale: {x: 0.16571341, y: 0.16571341, z: 0.16571346}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -259314,7 +259337,7 @@ Transform:
   m_GameObject: {fileID: 1646787222}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.67, y: -0.22099774, z: 0.00000561089}
+  m_LocalPosition: {x: -0.8, y: -0.22099774, z: 0.00000561089}
   m_LocalScale: {x: 0.16571341, y: 0.16571341, z: 0.16571346}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -272213,7 +272236,7 @@ Transform:
   m_GameObject: {fileID: 1854997636}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.2539, z: 0.256}
+  m_LocalPosition: {x: 0, y: 0.2965, z: 0.256}
   m_LocalScale: {x: 0.16520582, y: 0.16520573, z: 0.16520576}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -273302,7 +273325,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: -0.324}
-  m_SizeDelta: {x: 650, y: 500}
+  m_SizeDelta: {x: 700, y: 500}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1867218280 stripped
 GameObject:
@@ -274733,8 +274756,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Fine-tuning needed \u2014 the AI has most of the right knowledge but is
-    missing some real-world details "
+  m_text: "Fine-tuning needed \u2014 missing some real-world knowledge"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: eb44739c484b1b54bbc1a0d4d9dd1a50, type: 2}
   m_sharedMaterial: {fileID: -5839354330806206608, guid: eb44739c484b1b54bbc1a0d4d9dd1a50,
@@ -274801,7 +274823,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 1
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: -65.47745, w: 0}
+  m_margin: {x: 0, y: 0, z: -83.98211, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   _SortingLayer: 0
@@ -279718,8 +279740,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "No modification needed \u2014 the training data is correctly grounded
-    in real-world knowledge"
+  m_text: "No fix needed \u2014 training data is correct "
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: eb44739c484b1b54bbc1a0d4d9dd1a50, type: 2}
   m_sharedMaterial: {fileID: -5839354330806206608, guid: eb44739c484b1b54bbc1a0d4d9dd1a50,
@@ -282766,7 +282787,7 @@ Transform:
   m_GameObject: {fileID: 2022363025}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.67, y: -0.66099775, z: 0.00000561089}
+  m_LocalPosition: {x: -0.8, y: -0.66099775, z: 0.00000561089}
   m_LocalScale: {x: 0.16571341, y: 0.16571341, z: 0.16571346}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -299978,6 +299999,8 @@ MonoBehaviour:
   q3Group: {fileID: 4512592616237986115}
   q4Group: {fileID: 194497288}
   q5Group: {fileID: 1854997637}
+  q1SkipValue: No
+  q3SkipValue: 1
   surveyDataRecorder: {fileID: 1952240074}
   experimentDataRecorder: {fileID: 1952240077}
   experimentController: {fileID: 2031694173}
@@ -301535,7 +301558,7 @@ Transform:
   m_GameObject: {fileID: 4512592616237986114}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.239, z: 0.256}
+  m_LocalPosition: {x: 0, y: 0.2816, z: 0.256}
   m_LocalScale: {x: 0.16520582, y: 0.16520573, z: 0.16520576}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -314332,7 +314355,7 @@ Transform:
   m_GameObject: {fileID: 8595827685084917643}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.148, z: 0.256}
+  m_LocalPosition: {x: 0, y: 0.1906, z: 0.256}
   m_LocalScale: {x: 0.16520582, y: 0.16520573, z: 0.16520576}
   m_ConstrainProportionsScale: 1
   m_Children:
