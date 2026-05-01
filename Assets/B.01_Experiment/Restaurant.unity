@@ -278252,6 +278252,11 @@ PrefabInstance:
       propertyPath: _headRayColor.g
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3967811768702497691, guid: 8dbdc2b8eb66beb4693033addfa07c9c,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5709028558290963412, guid: 8dbdc2b8eb66beb4693033addfa07c9c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -278312,10 +278317,25 @@ PrefabInstance:
       propertyPath: _iModifyDataFromSourceMono
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 7397162150972659512, guid: 8dbdc2b8eb66beb4693033addfa07c9c,
+        type: 3}
+      propertyPath: fastMotionModeHandPosesEnabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7397162150972659512, guid: 8dbdc2b8eb66beb4693033addfa07c9c,
+        type: 3}
+      propertyPath: wideMotionMode2HandPosesEnabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7771406866760830531, guid: 8dbdc2b8eb66beb4693033addfa07c9c,
+        type: 3}
+      propertyPath: maxMessages
+      value: 999
+      objectReference: {fileID: 0}
     - target: {fileID: 7771406866760830531, guid: 8dbdc2b8eb66beb4693033addfa07c9c,
         type: 3}
       propertyPath: consoleEnabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7964399787071962209, guid: 8dbdc2b8eb66beb4693033addfa07c9c,
         type: 3}
@@ -279187,7 +279207,11 @@ PrefabInstance:
     - {fileID: 314988974968653722, guid: 8dbdc2b8eb66beb4693033addfa07c9c, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6730352662531224297, guid: 8dbdc2b8eb66beb4693033addfa07c9c,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1952240079}
   m_SourcePrefab: {fileID: 100100000, guid: 8dbdc2b8eb66beb4693033addfa07c9c, type: 3}
 --- !u!114 &1952240074 stripped
 MonoBehaviour:
@@ -279237,6 +279261,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0daa247ed2fc49d42899a69afef4ed1a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MetaFrame.Data.SurveyDataRecorder
+--- !u!1 &1952240078 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6730352662531224297, guid: 8dbdc2b8eb66beb4693033addfa07c9c,
+    type: 3}
+  m_PrefabInstance: {fileID: 1952240073}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1952240079
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1952240078}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebcfcb81e982c8243a7c5fa089aa3671, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MetaNomads.Data.TrackingInitializer
+  _enableBodyTracking: 1
+  _enableFaceTracking: 1
+  _enableEyeTracking: 1
+  _useVisualFaceTracking: 1
+  _useAudioFaceTracking: 0
+  _ovrReadyTimeoutSeconds: 10
+  _heartbeatIntervalSeconds: 1.5
+  _verifyDelaySeconds: 0.5
 --- !u!1 &1952828571 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4230151373269438559, guid: 874e1c995283bd547a24638441df1675,

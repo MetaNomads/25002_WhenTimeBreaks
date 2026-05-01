@@ -23,7 +23,6 @@ MonoBehaviour:
   bodyTrackingSupport: 1
   faceTrackingSupport: 1
   eyeTrackingSupport: 1
-  virtualKeyboardSupport: 0
   colocationSessionSupport: 1
   sceneSupport: 1
   boundaryVisibilitySupport: 1
