@@ -278335,12 +278335,12 @@ PrefabInstance:
     - target: {fileID: 7771406866760830531, guid: 8dbdc2b8eb66beb4693033addfa07c9c,
         type: 3}
       propertyPath: consoleEnabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7964399787071962209, guid: 8dbdc2b8eb66beb4693033addfa07c9c,
         type: 3}
       propertyPath: subjectID
-      value: 26
+      value: 36
       objectReference: {fileID: 0}
     - target: {fileID: 7964399787071962209, guid: 8dbdc2b8eb66beb4693033addfa07c9c,
         type: 3}
@@ -279284,9 +279284,9 @@ MonoBehaviour:
   _enableEyeTracking: 1
   _useVisualFaceTracking: 1
   _useAudioFaceTracking: 0
-  _ovrReadyTimeoutSeconds: 10
-  _heartbeatIntervalSeconds: 1.5
-  _verifyDelaySeconds: 0.5
+  _maxRetryAttempts: 5
+  _retryFrequency: 0.5
+  _initializationDelay: 0.5
 --- !u!1 &1952828571 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4230151373269438559, guid: 874e1c995283bd547a24638441df1675,
