@@ -2,7 +2,6 @@
   "dependencies": {
     "com.meta.xr.runtimeoptimizer": "0.2.2",
     "com.meta.xr.sdk.all": "201.0.0",
-    "com.meta.xr.sdk.core": "201.0.0",
     "com.meta.xr.sdk.movement": "https://github.com/oculus-samples/Unity-Movement.git",
     "com.meta.xr.sdk.sharedassets": "68.0.0",
     "com.unity.adaptiveperformance": "6.0.0",

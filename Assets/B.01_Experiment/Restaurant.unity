@@ -3786,7 +3786,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _position: {x: 0, y: 0, z: 0}
-  _size: {x: 1, y: 1, z: 1}
+  _size: {x: 4, y: 0.6, z: 1}
 --- !u!114 &72359262
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4933,6 +4933,16 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4364048790007834782, guid: f71c322667bcbff42b82e55f95f26898,
+        type: 3}
+      propertyPath: _size.x
+      value: 1.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4364048790007834782, guid: f71c322667bcbff42b82e55f95f26898,
+        type: 3}
+      propertyPath: _size.y
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 4503527458959189172, guid: f71c322667bcbff42b82e55f95f26898,
         type: 3}
       propertyPath: m_SizeDelta.y
@@ -5137,6 +5147,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 100829026}
+    - targetCorrespondingSourceObject: {fileID: 4578757549960673978, guid: f71c322667bcbff42b82e55f95f26898,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: f71c322667bcbff42b82e55f95f26898, type: 3}
 --- !u!4 &100829022 stripped
 Transform:
@@ -8066,7 +8080,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _position: {x: 0, y: 0, z: 0}
-  _size: {x: 1, y: 1, z: 1}
+  _size: {x: 0.8, y: 0.8, z: 1}
 --- !u!114 &178688475
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24037,7 +24051,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _position: {x: 0, y: 0, z: 0}
-  _size: {x: 1, y: 1, z: 1}
+  _size: {x: 0.8, y: 0.8, z: 1}
 --- !u!114 &464275943
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -46756,7 +46770,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Has the AI trained itself correctly on real-world knowledge?
+  m_text: "Did anything seem odd about the cup? \nIs it an AI training error or an
+    unrelated VR glitch / excution error?"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -46798,7 +46813,7 @@ MonoBehaviour:
   m_wordSpacing: 3
   m_lineSpacing: 0
   m_lineSpacingMax: 0
-  m_paragraphSpacing: 75
+  m_paragraphSpacing: 15
   m_charWidthMaxAdj: 0
   m_TextWrappingMode: 2
   m_wordWrappingRatios: 0.4
@@ -46822,7 +46837,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 74.4509, y: 263.8429, z: 137.26868, w: -182.79338}
+  m_margin: {x: 74.4509, y: 263.8429, z: -53.049255, w: -182.79338}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -47015,7 +47030,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _position: {x: 0, y: 0, z: 0}
-  _size: {x: 1, y: 1, z: 1}
+  _size: {x: 0.8, y: 0.8, z: 1}
 --- !u!114 &883789104
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -48560,7 +48575,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _position: {x: 0, y: 0, z: 0}
-  _size: {x: 1, y: 1, z: 1}
+  _size: {x: 4, y: 0.6, z: 1}
 --- !u!114 &905099962
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -222022,7 +222037,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _position: {x: 0, y: 0, z: 0}
-  _size: {x: 1, y: 1, z: 1}
+  _size: {x: 4, y: 0.6, z: 1}
 --- !u!114 &1044249293
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -225252,7 +225267,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _position: {x: 0, y: 0, z: 0}
-  _size: {x: 1, y: 1, z: 1}
+  _size: {x: 0.8, y: 0.8, z: 1}
 --- !u!114 &1115359914
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -225489,7 +225504,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _position: {x: 0, y: 0, z: 0}
-  _size: {x: 1, y: 1, z: 1}
+  _size: {x: 0.8, y: 0.8, z: 1}
 --- !u!114 &1118030990
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -227651,7 +227666,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _position: {x: 0, y: 0, z: 0}
-  _size: {x: 1, y: 1, z: 1}
+  _size: {x: 4, y: 0.6, z: 1}
 --- !u!114 &1152153819
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -234874,7 +234889,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _position: {x: 0, y: 0, z: 0}
-  _size: {x: 1, y: 1, z: 1}
+  _size: {x: 4, y: 0.6, z: 1}
 --- !u!114 &1262765995
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -240423,6 +240438,16 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4364048790007834782, guid: f71c322667bcbff42b82e55f95f26898,
+        type: 3}
+      propertyPath: _size.x
+      value: 1.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4364048790007834782, guid: f71c322667bcbff42b82e55f95f26898,
+        type: 3}
+      propertyPath: _size.y
+      value: 0.4
+      objectReference: {fileID: 0}
     - target: {fileID: 4503527458959189172, guid: f71c322667bcbff42b82e55f95f26898,
         type: 3}
       propertyPath: m_SizeDelta.y
@@ -240592,6 +240617,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 1365923400}
+    - targetCorrespondingSourceObject: {fileID: 4578757549960673978, guid: f71c322667bcbff42b82e55f95f26898,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: f71c322667bcbff42b82e55f95f26898, type: 3}
 --- !u!4 &1365923397 stripped
 Transform:
@@ -248473,6 +248502,16 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4364048790007834782, guid: f71c322667bcbff42b82e55f95f26898,
+        type: 3}
+      propertyPath: _size.x
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4364048790007834782, guid: f71c322667bcbff42b82e55f95f26898,
+        type: 3}
+      propertyPath: _size.y
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 4503527458959189172, guid: f71c322667bcbff42b82e55f95f26898,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -250107,6 +250146,16 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4364048790007834782, guid: f71c322667bcbff42b82e55f95f26898,
+        type: 3}
+      propertyPath: _size.x
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4364048790007834782, guid: f71c322667bcbff42b82e55f95f26898,
+        type: 3}
+      propertyPath: _size.y
+      value: 0.35
+      objectReference: {fileID: 0}
     - target: {fileID: 4503527458959189172, guid: f71c322667bcbff42b82e55f95f26898,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -250306,7 +250355,11 @@ PrefabInstance:
     - {fileID: 4608025070266728554, guid: f71c322667bcbff42b82e55f95f26898, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4578757549960673978, guid: f71c322667bcbff42b82e55f95f26898,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: f71c322667bcbff42b82e55f95f26898, type: 3}
 --- !u!4 &1531542721 stripped
 Transform:
@@ -252100,7 +252153,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Use the next 10 tutorial trials to learn the controls and movements. Some
+  m_text: "Use the next 5 tutorial trials to learn the controls and movements. Some
     VR interactions may feel unfamiliar \u2014 these are intentional interface mechanics
     as described in the previous instructions."
   m_isRightToLeft: 0
@@ -252957,7 +253010,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _position: {x: 0, y: 0, z: 0}
-  _size: {x: 1, y: 1, z: 1}
+  _size: {x: 4, y: 0.6, z: 1}
 --- !u!114 &1595651176
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -254519,6 +254572,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_ConstrainProportionsScale
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4364048790007834782, guid: f71c322667bcbff42b82e55f95f26898,
+        type: 3}
+      propertyPath: _size.x
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4364048790007834782, guid: f71c322667bcbff42b82e55f95f26898,
+        type: 3}
+      propertyPath: _size.y
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 4364048790007834782, guid: f71c322667bcbff42b82e55f95f26898,
         type: 3}
@@ -260192,7 +260255,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _position: {x: 0, y: 0, z: 0}
-  _size: {x: 1, y: 1, z: 1}
+  _size: {x: 4, y: 0.6, z: 1}
 --- !u!114 &1718128983
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -262265,6 +262328,16 @@ PrefabInstance:
     - target: {fileID: 4338655468991657457, guid: f71c322667bcbff42b82e55f95f26898,
         type: 3}
       propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4364048790007834782, guid: f71c322667bcbff42b82e55f95f26898,
+        type: 3}
+      propertyPath: _size.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4364048790007834782, guid: f71c322667bcbff42b82e55f95f26898,
+        type: 3}
+      propertyPath: _size.y
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4503527458959189172, guid: f71c322667bcbff42b82e55f95f26898,
@@ -273857,7 +273930,7 @@ PrefabInstance:
     - target: {fileID: 7964399787071962209, guid: 8dbdc2b8eb66beb4693033addfa07c9c,
         type: 3}
       propertyPath: subjectID
-      value: 36
+      value: 39
       objectReference: {fileID: 0}
     - target: {fileID: 7964399787071962209, guid: 8dbdc2b8eb66beb4693033addfa07c9c,
         type: 3}
@@ -283876,7 +283949,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _position: {x: 0, y: 0, z: 0}
-  _size: {x: 1, y: 1, z: 1}
+  _size: {x: 4, y: 0.6, z: 1}
 --- !u!114 &2118154086
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -290032,7 +290105,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _position: {x: 0, y: 0, z: 0}
-  _size: {x: 1, y: 1, z: 1}
+  _size: {x: 4, y: 0.6, z: 1}
 --- !u!23 &1763464370813648752 stripped
 MeshRenderer:
   m_CorrespondingSourceObject: {fileID: 386988576806261793, guid: dff31a9411ba00249a37900434513181,
@@ -298255,7 +298328,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Q1: Did the cup look or behave differently from the one in the tutorial?'
+  m_text: 'Q1: Did anything about the cup''s appearance or behavior seem off compared
+    to the tutorial?'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -298321,7 +298395,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 27.512768, z: 144.69435, w: 25.138287}
+  m_margin: {x: 0, y: 27.512768, z: 123.77675, w: 25.138287}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -308299,7 +308373,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _position: {x: 0, y: 0, z: 0}
-  _size: {x: 1, y: 1, z: 1}
+  _size: {x: 4, y: 0.6, z: 1}
 --- !u!33 &6652040557661716323
 MeshFilter:
   m_ObjectHideFlags: 0

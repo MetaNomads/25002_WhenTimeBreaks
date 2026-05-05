@@ -44,7 +44,7 @@
     },
     "com.meta.xr.sdk.core": {
       "version": "201.0.0",
-      "depth": 0,
+      "depth": 1,
       "source": "registry",
       "dependencies": {
         "com.unity.xr.hands": "1.7.2",
