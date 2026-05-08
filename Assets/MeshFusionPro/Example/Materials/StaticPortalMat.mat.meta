@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 2e6144a416e9d3047b123182f25980ea
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 255560
+  packageName: 'MeshFusion Pro : Ultimate Optimization Tool'
+  packageVersion: 1.3.1
+  assetPath: Assets/MeshFusionPro/Example/Materials/StaticPortalMat.mat
+  uploadId: 853444

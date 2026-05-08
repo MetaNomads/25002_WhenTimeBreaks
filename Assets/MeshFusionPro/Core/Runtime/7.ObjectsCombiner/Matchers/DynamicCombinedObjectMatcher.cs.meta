@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: b4d4675837b1d5e498f18e87299e3176
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 255560
+  packageName: 'MeshFusion Pro : Ultimate Optimization Tool'
+  packageVersion: 1.3.1
+  assetPath: Assets/MeshFusionPro/Core/Runtime/7.ObjectsCombiner/Matchers/DynamicCombinedObjectMatcher.cs
+  uploadId: 853444

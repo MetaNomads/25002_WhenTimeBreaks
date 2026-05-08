@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: a3b85ee7155343c0a5077c56fdbddf1f
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 255560
+  packageName: 'MeshFusion Pro : Ultimate Optimization Tool'
+  packageVersion: 1.3.1
+  assetPath: Assets/MeshFusionPro/Example/Packages/#NVJOB Water Shaders V2/Examples
+    Water/Prefabs/Water Specular.prefab
+  uploadId: 853444

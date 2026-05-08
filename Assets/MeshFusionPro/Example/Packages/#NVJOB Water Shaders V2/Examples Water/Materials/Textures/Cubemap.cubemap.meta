@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: f625b0e7682e4deaa90d46f6dbcd68a6
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 255560
+  packageName: 'MeshFusion Pro : Ultimate Optimization Tool'
+  packageVersion: 1.3.1
+  assetPath: Assets/MeshFusionPro/Example/Packages/#NVJOB Water Shaders V2/Examples
+    Water/Materials/Textures/Cubemap.cubemap
+  uploadId: 853444

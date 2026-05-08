@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 41f9e7151b77d1a47a3269345ed800cc
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 7400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 255560
+  packageName: 'MeshFusion Pro : Ultimate Optimization Tool'
+  packageVersion: 1.3.1
+  assetPath: Assets/MeshFusionPro/Example/Animation/Rock7.001.anim
+  uploadId: 853444

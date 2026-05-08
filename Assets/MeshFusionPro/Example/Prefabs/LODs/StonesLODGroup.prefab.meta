@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: e7922ea1ef5b68e48834a1c20632a094
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 255560
+  packageName: 'MeshFusion Pro : Ultimate Optimization Tool'
+  packageVersion: 1.3.1
+  assetPath: Assets/MeshFusionPro/Example/Prefabs/LODs/StonesLODGroup.prefab
+  uploadId: 853444

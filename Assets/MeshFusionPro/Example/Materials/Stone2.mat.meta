@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 8e63ff5139f09be4885befa6c8715f2c
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 255560
+  packageName: 'MeshFusion Pro : Ultimate Optimization Tool'
+  packageVersion: 1.3.1
+  assetPath: Assets/MeshFusionPro/Example/Materials/Stone2.mat
+  uploadId: 853444

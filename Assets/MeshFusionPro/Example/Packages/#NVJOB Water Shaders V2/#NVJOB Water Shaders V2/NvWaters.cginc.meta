@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 6fe7f708b278472289c5ca0c9bd99002
+ShaderImporter:
+  externalObjects: {}
+  defaultTextures: []
+  nonModifiableTextures: []
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 255560
+  packageName: 'MeshFusion Pro : Ultimate Optimization Tool'
+  packageVersion: 1.3.1
+  assetPath: Assets/MeshFusionPro/Example/Packages/#NVJOB Water Shaders V2/#NVJOB
+    Water Shaders V2/NvWaters.cginc
+  uploadId: 853444

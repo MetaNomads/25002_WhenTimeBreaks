@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 2ab115feecbf12440addbe48d77b8170
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 255560
+  packageName: 'MeshFusion Pro : Ultimate Optimization Tool'
+  packageVersion: 1.3.1
+  assetPath: Assets/MeshFusionPro/Example/Prefabs/Static/StoneStatic.prefab
+  uploadId: 853444

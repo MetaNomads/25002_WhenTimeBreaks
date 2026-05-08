@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 28ab203a6204400b853fcf56294ef10b
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 255560
+  packageName: 'MeshFusion Pro : Ultimate Optimization Tool'
+  packageVersion: 1.3.1
+  assetPath: Assets/MeshFusionPro/Example/Packages/#NVJOB Water Shaders V2/Examples
+    Water/Prefabs/Water Surface Mirror.prefab
+  uploadId: 853444

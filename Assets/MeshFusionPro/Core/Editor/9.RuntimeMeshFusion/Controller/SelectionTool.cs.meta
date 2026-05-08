@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 8ee0926829d59ad48a9ab2ccec3dc1a8
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 255560
+  packageName: 'MeshFusion Pro : Ultimate Optimization Tool'
+  packageVersion: 1.3.1
+  assetPath: Assets/MeshFusionPro/Core/Editor/9.RuntimeMeshFusion/Controller/SelectionTool.cs
+  uploadId: 853444

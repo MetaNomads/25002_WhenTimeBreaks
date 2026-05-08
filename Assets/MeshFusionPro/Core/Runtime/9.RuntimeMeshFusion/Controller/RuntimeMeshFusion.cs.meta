@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 7d5758013cb593c45ba2ba6f765aa4bd
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 255560
+  packageName: 'MeshFusion Pro : Ultimate Optimization Tool'
+  packageVersion: 1.3.1
+  assetPath: Assets/MeshFusionPro/Core/Runtime/9.RuntimeMeshFusion/Controller/RuntimeMeshFusion.cs
+  uploadId: 853444

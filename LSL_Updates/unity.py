@@ -1,0 +1,723 @@
+"""
+unity.py — UDP handler for Unity / LSLConnector.cs
+
+Discovery strategy (cross-subnet capable):
+  1. Broadcast DISCOVER on all local subnet broadcast addresses
+  2. Unicast DISCOVER to every IP in the local /24 subnet(s) concurrently
+  This covers same-subnet via broadcast AND cross-subnet via unicast sweep.
+
+Protocol:
+  LSL → DISCOVER   (broadcast + unicast sweep)
+  Unity ← HELLO,unity,<name>
+  LSL → CONNECT    (unicast to Unity's IP)
+  Unity ← CONNECTED,<name>
+
+In addition to the legacy ping/data protocol, this handler now bridges to the
+LSL ↔ Unity experiment controller (see SyncBridge.cs / LslExperimentRouter.cs):
+  - SubjectIdHandshake → SUBJECT_ID:<n>:<seq> ↔ SUBJECT_ID_ACK / SUBJECT_ID_REJECT
+  - ExperimentController → CMD:STEP/FORCE_STEP/SESSION:<n>:<seq>, STATE:..., READY:...
+
+The new modules are dependency-free (stdlib only) and live in the same package.
+They're wired here at __init__ time and re-emit their callbacks as Qt signals
+so main_window.py can connect to them like any other signal — never touching
+the modules from the GUI thread directly.
+"""
+
+import ipaddress
+import logging
+import socket
+import threading
+from collections import deque
+import time
+from dataclasses import dataclass
+from typing import Dict, List, Optional
+
+from PyQt6.QtCore import QObject, pyqtSignal
+
+from contracts import requires, ensures, Contract
+
+# New: LSL ↔ Unity experiment-controller bridge modules. These do no networking
+# themselves — they receive a `send` callable from us and return parsed events
+# via callbacks that we re-emit as Qt signals.
+from subject_id_handshake import (
+    SubjectIdHandshake, HandshakeState, HandshakeResult,
+)
+from experiment_controller import (
+    ExperimentController, SequencerState, CmdResult,
+)
+
+logger = logging.getLogger(__name__)
+DEFAULT_PORT      = 12345
+BROADCAST_ADDRESS = "255.255.255.255"
+ACK_TIMEOUT       = 0.5
+
+
+@dataclass
+class UnityDevice:
+    ip:   str
+    name: str
+
+    @property
+    def display_name(self) -> str:
+        return f"{self.name}  [{self.ip}]"
+
+
+class UnityHandler(QObject):
+
+    ping_requested      = pyqtSignal()
+    status_changed      = pyqtSignal(str)
+    log_message         = pyqtSignal(str)
+    calibration_changed = pyqtSignal(bool)
+    devices_found       = pyqtSignal(list)
+    scan_progress       = pyqtSignal(str)
+    data_received       = pyqtSignal(str)   # raw DATA packet for live monitor
+    recording_started   = pyqtSignal()      # Unity recorder started → LSL should start too
+    recording_stopped   = pyqtSignal()      # Unity recorder stopped
+    unity_ack_received  = pyqtSignal(str, object)  # (ping_id, unity_epoch_ns as int)
+    headset_state_changed = pyqtSignal(str)  # "headset_doffed" | "headset_donned"
+
+    # ── New: LSL ↔ Unity experiment-controller bridge signals ─────────────
+    # All emitted on the GUI thread (re-emitted from module callbacks that
+    # may fire on the receive thread). Connect them like any other signal.
+    subject_id_acked      = pyqtSignal(int)     # confirmed subject id
+    subject_id_rejected   = pyqtSignal(object)  # HandshakeResult
+    subject_id_state      = pyqtSignal(object)  # HandshakeState enum
+    unity_ready           = pyqtSignal(dict)    # {"subject_id": Optional[int], "raw": str}
+    exp_state             = pyqtSignal(object)  # SequencerState
+    cmd_done              = pyqtSignal(object)  # _PendingCmd dataclass
+
+    def __init__(self, port: int = DEFAULT_PORT, parent=None):
+        super().__init__(parent)
+        self._port      = port
+        self._running   = False
+        self._sock:  Optional[socket.socket] = None
+        self._out:   Optional[socket.socket] = None
+        self._device: Optional[UnityDevice]  = None
+        self.calibrated_latency_ns: int  = -1
+        self.has_streaming_data:    bool = False
+        self._pending_acks: Dict[str, tuple] = {}
+        self._ack_lock     = threading.Lock()
+        self._scan_results: List[UnityDevice] = []
+        self._scan_lock    = threading.Lock()
+        self._connect_event = threading.Event()
+        self._streaming = False
+        self._rtt_buffer = deque(maxlen=20)
+        self._continuous_calib_active = False
+        self._session_latency_ns: int = -1   # locked at record-start calibration
+        self._stream_interval: float = 1.0   # seconds between REQUEST_DATA
+        self._last_sample_ns: int = 0        # for silent-stream watchdog
+        self._stop_event = threading.Event() # poll-loop stop signal (replaces sleep race)
+
+        # ── LSL ↔ Unity experiment-controller bridge ──────────────────────
+        # Module instances. Their `send` callable goes through send_text(),
+        # which is a thin wrapper around _out.sendto() that uses the same
+        # connected device address as the legacy ping/calib path. Callbacks
+        # arrive on whatever thread the module decides — usually the receive
+        # thread or a Timer worker — so we re-emit them as signals (Qt
+        # marshals across thread boundaries automatically).
+        self._subject_id = SubjectIdHandshake(
+            send=self.send_text,
+            on_acked=self._on_subject_id_acked_cb,
+            on_rejected=self._on_subject_id_rejected_cb,
+            on_state_change=self._on_subject_id_state_cb,
+        )
+        self._exp_controller = ExperimentController(
+            send=self.send_text,
+            on_state=self._on_exp_state_cb,
+            on_command_done=self._on_cmd_done_cb,
+            on_ready=self._on_unity_ready_cb,
+        )
+
+    # ── Public façades for main_window.py ────────────────────────────────────
+
+    @property
+    def subject_id_handshake(self) -> SubjectIdHandshake:
+        """Façade for the handshake module — main_window calls send_subject_id() on this."""
+        return self._subject_id
+
+    @property
+    def experiment_controller(self) -> ExperimentController:
+        """Façade for the controller module — main_window connects buttons to send_step/etc."""
+        return self._exp_controller
+
+    @property
+    def seconds_since_last_sample(self) -> float:
+        if self._last_sample_ns == 0: return 0.0
+        return (time.time_ns() - self._last_sample_ns) / 1e9
+
+    @property
+    def effective_latency_ns(self) -> int:
+        return self._session_latency_ns if self._session_latency_ns >= 0 else self.calibrated_latency_ns
+
+    @ensures(lambda result, *_args, **_kw: isinstance(result, dict),
+             "public_summary must return a dict")
+    def public_summary(self) -> dict:
+        """Honest snapshot for session_meta.json — replaces direct
+        `_unity._session_latency_ns` / `_device.ip` reach-arounds. Now also
+        includes the confirmed subject id so it's part of the recorded session
+        metadata from the moment the LSL host materialises a folder."""
+        return {
+            "ip":                 self._device.ip if self._device else None,
+            "name":               self._device.name if self._device else None,
+            "session_latency_ns": self.effective_latency_ns,
+            "has_streaming_data": self.has_streaming_data,
+            "subject_id":         self._subject_id.confirmed_subject_id,
+        }
+
+    # ── Lifecycle ─────────────────────────────────────────────────────────────
+
+    def start(self):
+        self._running = True
+        self._sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+        self._sock.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
+        # SO_REUSEPORT allows multiple sockets on the same port on macOS/Linux
+        if hasattr(socket, "SO_REUSEPORT"):
+            self._sock.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEPORT, 1)
+        self._sock.settimeout(1.0)
+        try:
+            self._sock.bind(("", self._port))
+        except OSError as e:
+            self._try_emit(self.log_message,
+                f"[Unity] Cannot bind port {self._port}: {e}\n"
+                f"        Run: lsof -i :{self._port}  to find what's using it."
+            )
+            self._sock.close()
+            self._sock = None
+            return
+        self._out = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+        self._out.setsockopt(socket.SOL_SOCKET, socket.SO_BROADCAST, 1)
+        threading.Thread(target=self._listen, daemon=True).start()
+        self._try_emit(self.log_message, f"[Unity] Listening on UDP port {self._port}")
+
+    def _try_emit(self, signal, *args):
+        """Safely emit a signal from any thread."""
+        try:
+            signal.emit(*args)
+        except RuntimeError:
+            pass
+
+    def stop(self):
+        self._running = False
+        self._device  = None
+        self.calibrated_latency_ns = -1
+        self._session_latency_ns = -1
+        self.has_streaming_data    = False
+        self._try_emit(self.calibration_changed, False)
+        self._try_emit(self.status_changed, "disconnected")
+        if self._sock: self._sock.close()
+        if self._out:  self._out.close()
+
+    # ── Network helpers ───────────────────────────────────────────────────────
+
+    def _get_local_ips(self) -> List[str]:
+        """Return all non-loopback IPv4 addresses on this machine."""
+        ips = []
+        try:
+            for info in socket.getaddrinfo(socket.gethostname(), None, socket.AF_INET):
+                ip = info[4][0]
+                if not ip.startswith("127."):
+                    ips.append(ip)
+        except Exception:
+            pass
+        # Fallback
+        if not ips:
+            try:
+                with socket.socket(socket.AF_INET, socket.SOCK_DGRAM) as s:
+                    s.connect(("8.8.8.8", 80))
+                    ips.append(s.getsockname()[0])
+            except Exception:
+                pass
+        return list(set(ips))
+
+    def _get_subnets(self) -> List[ipaddress.IPv4Network]:
+        """Return /24 networks for all local IPs."""
+        nets = []
+        for ip in self._get_local_ips():
+            try:
+                net = ipaddress.IPv4Network(f"{ip}/24", strict=False)
+                nets.append(net)
+            except Exception:
+                pass
+        return nets
+
+    # ── Discovery ─────────────────────────────────────────────────────────────
+
+    def scan(self, duration: float = 8.0):
+        """
+        Full cross-subnet scan:
+          1. Broadcast DISCOVER on all subnet broadcast addresses
+          2. Unicast DISCOVER to every .1-.254 in local /24(s) concurrently
+        """
+        threading.Thread(target=self._do_scan, args=(duration,), daemon=True).start()
+
+    def _do_scan(self, duration: float):
+        if not self._out:
+            self._try_emit(self.log_message, "[Unity] Cannot scan — socket not started")
+            self._try_emit(self.devices_found, [])
+            return
+
+        with self._scan_lock:
+            self._scan_results.clear()
+
+        subnets = self._get_subnets()
+        local_ips = self._get_local_ips()
+
+        # Build probe target list
+        # 1. Subnet broadcast addresses (fast, same-subnet only)
+        broadcasts = [BROADCAST_ADDRESS]
+        for net in subnets:
+            bc = str(net.broadcast_address)
+            if bc not in broadcasts:
+                broadcasts.append(bc)
+
+        # 2. All host IPs in local /24(s) for cross-subnet reach
+        unicast_targets = []
+        for net in subnets:
+            for host in net.hosts():
+                ip = str(host)
+                if ip not in local_ips:          # skip ourselves
+                    unicast_targets.append(ip)
+
+        total = len(unicast_targets) + len(broadcasts)
+        self._try_emit(self.scan_progress,
+            f"Scanning {len(broadcasts)} broadcast + {len(unicast_targets)} unicast addresses..."
+        )
+        self._try_emit(self.log_message,
+            f"[Unity] Scanning: {', '.join(broadcasts)}  "
+            f"+ {len(unicast_targets)} unicast IPs across {len(subnets)} subnet(s)"
+        )
+
+        # Phase 1: broadcast (cheap, fast — covers same subnet)
+        for bc in broadcasts:
+            try:
+                self._out.sendto(b"DISCOVER", (bc, self._port))
+            except OSError:
+                pass
+        time.sleep(0.5)
+
+        # Phase 2: unicast sweep (cross-subnet capable)
+        # Use a thread pool — send 50 at a time to avoid socket flooding
+        BATCH = 50
+        sent  = 0
+        for i in range(0, len(unicast_targets), BATCH):
+            if not self._running:
+                break
+            batch = unicast_targets[i:i + BATCH]
+            for ip in batch:
+                try:
+                    self._out.sendto(b"DISCOVER", (ip, self._port))
+                    sent += 1
+                except OSError:
+                    pass
+            # Small pause between batches so listener can process replies
+            time.sleep(0.08)
+            self._try_emit(self.scan_progress,
+                f"Probing... {sent}/{len(unicast_targets)} IPs"
+            )
+
+        # Wait remainder of duration for late replies
+        elapsed = 0.5 + (len(unicast_targets) / BATCH) * 0.08
+        remaining = duration - elapsed
+        if remaining > 0:
+            time.sleep(remaining)
+
+        with self._scan_lock:
+            found = list(self._scan_results)
+
+        msg = f"Scan complete — {len(found)} device(s) found."
+        if not found:
+            msg += "  Try entering the IP manually."
+        self._try_emit(self.scan_progress, msg)
+        self._try_emit(self.log_message, f"[Unity] {msg}")
+        self._try_emit(self.devices_found, found)
+
+    # ── Connect ───────────────────────────────────────────────────────────────
+
+    @requires(lambda self, device: device is not None and bool(getattr(device, "ip", "")),
+              "device must be non-None and have a non-empty ip")
+    def connect_device(self, device: UnityDevice):
+        threading.Thread(target=self._do_connect, args=(device,), daemon=True).start()
+
+    def _do_connect(self, device: UnityDevice):
+        self._try_emit(self.log_message, f"[Unity] Connecting to {device.display_name}...")
+        self._connect_event.clear()
+        try:
+            self._out.sendto(b"CONNECT", (device.ip, self._port))
+        except OSError as e:
+            self._try_emit(self.log_message, f"[Unity] Connect failed: {e}")
+            return
+        # Send CONNECT repeatedly — UDP can be lost, and the first
+        # packet may be blocked while the OS firewall dialog is shown.
+        # Try every 0.5s for up to 6 seconds.
+        got = False
+        for attempt in range(12):
+            if attempt > 0:
+                self._try_emit(self.log_message,
+                    f"[Unity] Retrying CONNECT ({attempt+1}/12)..."
+                )
+            try:
+                self._out.sendto(b"CONNECT", (device.ip, self._port))
+            except OSError as e:
+                self._try_emit(self.log_message, f"[Unity] Send error: {e}")
+                return
+            got = self._connect_event.wait(timeout=0.5)
+            if got:
+                break
+
+        if got:
+            self._device = device
+            self._try_emit(self.status_changed, "connected")
+            self._try_emit(self.log_message, f"[Unity] Connected to {device.display_name}")
+            threading.Thread(target=self.start_continuous_calibration, daemon=True).start()
+            self.start_data_stream()   # stream at current rate while connected
+        else:
+            self._try_emit(self.log_message,
+                f"[Unity] No response from {device.ip} after 6s.\n"
+                f"  → On the Unity machine ({device.ip}) check:\n"
+                f"     1. macOS: System Settings → Firewall → allow Unity Editor\n"
+                f"        (or a dialog may have appeared asking to allow connections — click Allow)\n"
+                f"     2. Windows: Windows Defender Firewall → allow Unity.exe for UDP\n"
+                f"     3. Confirm LSLConnector.cs is on an active GameObject and scene is in Play mode\n"
+                f"     4. Confirm udpPort in LSLConnector.cs matches LSL port ({self._port})"
+            )
+
+    def disconnect_device(self):
+        self._streaming = False
+        if self._device and self._out:
+            try:
+                self._out.sendto(b"DISCONNECT", (self._device.ip, self._port))
+            except OSError:
+                pass
+        self._device = None
+        self.calibrated_latency_ns = -1
+        self._try_emit(self.calibration_changed, False)
+        self._try_emit(self.status_changed, "disconnected")
+        self._try_emit(self.log_message, "[Unity] Disconnected")
+
+    @property
+    def is_connected(self) -> bool:
+        return self._device is not None
+
+    @property
+    def device_ip(self) -> Optional[str]:
+        return self._device.ip if self._device else None
+
+    # ── Ping & calibration ────────────────────────────────────────────────────
+
+    def send_command(self, cmd: str):
+        """Send a control command to the connected Unity device.
+
+        Legacy entry point for control verbs like REQUEST_DATA. New code
+        should prefer send_text(), which is the same plumbing but with a
+        clearer name and graceful no-op when not connected (instead of a
+        silent OSError swallow)."""
+        if self._out and self._device:
+            try:
+                self._out.sendto(cmd.encode(), (self._device.ip, self._port))
+            except OSError as e:
+                logger.warning(f"Unity send_command {cmd}: {e}")
+
+    def send_text(self, msg: str) -> None:
+        """Send a UTF-8 line to the connected Unity host. Used by the
+        SubjectIdHandshake / ExperimentController modules. No-op (with log)
+        when no device is connected — this happens routinely during the
+        retry window before the operator clicks Connect."""
+        if not msg:
+            return
+        if not self._out or not self._device:
+            # Don't spam the log on every retry tick — debug-level only.
+            logger.debug("send_text dropped (not connected): %r", msg[:40])
+            return
+        try:
+            self._out.sendto(msg.encode("utf-8"), (self._device.ip, self._port))
+        except OSError as e:
+            logger.warning("send_text failed for %r: %s", msg[:40], e)
+
+    @requires(lambda self, label: isinstance(label, str) and len(label) > 0,
+              "label must be a non-empty string")
+    def broadcast_ping(self, label: str) -> int:
+        if not self._out or not self._device:
+            return -1
+        try:
+            self._out.sendto(label.encode(), (self._device.ip, self._port))
+            self._try_emit(self.log_message, f"[Unity] Ping → {self._device.ip}: {label}")
+        except OSError as e:
+            logger.warning(f"Unity ping: {e}")
+            return -1
+        return self.calibrated_latency_ns
+
+    def _single_rtt(self, label: str) -> Optional[int]:
+        if not self._out or not self._device:
+            return None
+        event = threading.Event()
+        send_ns = time.time_ns()
+        with self._ack_lock:
+            self._pending_acks[label] = (send_ns, event)
+        try:
+            self._out.sendto(label.encode(), (self._device.ip, self._port))
+        except OSError:
+            with self._ack_lock:
+                self._pending_acks.pop(label, None)
+            return None
+        got_ack = event.wait(timeout=ACK_TIMEOUT)
+        recv_ns = time.time_ns()
+        with self._ack_lock:
+            entry = self._pending_acks.pop(label, None)
+        if got_ack and entry and entry[0] > 0:
+            return recv_ns - entry[0]
+        return None
+
+    # ── Data polling ─────────────────────────────────────────────────────────
+
+    def start_data_stream(self, rate_hz: float = 3.0):
+        """Start or restart polling Unity for data. Safe to call multiple times."""
+        if not self._device:
+            return
+        # Stop existing loop deterministically (event-based, not sleep-race) and
+        # wait briefly for it to exit before starting a new one. Previous version
+        # used a 50 ms sleep which was shorter than the loop's 1 s sleep, so two
+        # poll loops could run in parallel.
+        if self._streaming:
+            self._streaming = False
+            self._stop_event.set()
+            # Bounded wait — if it doesn't exit in 1.5x interval, proceed anyway.
+            for _ in range(int((self._stream_interval + 0.2) * 20)):
+                if not self._stop_event.is_set():
+                    break
+                time.sleep(0.05)
+        self._stop_event.clear()
+        self._streaming = True
+        threading.Thread(target=self._poll_loop, daemon=True).start()
+
+    def stop_data_stream(self):
+        self._streaming = False
+        self._stop_event.set()
+
+    @requires(lambda self, rate_hz: rate_hz > 0,
+              "rate_hz must be positive")
+    def set_stream_rate(self, rate_hz: float):
+        """Change streaming rate dynamically. Takes effect on next poll cycle."""
+        self._stream_interval = 1.0 / max(rate_hz, 0.1)
+
+    def _poll_loop(self):
+        while self._running and self._device and self._streaming:
+            try:
+                if self._out and self._device:
+                    self._out.sendto(b"REQUEST_DATA", (self._device.ip, self._port))
+            except OSError:
+                pass
+            # Wait on the stop-event so a stop signal exits promptly instead of
+            # waiting out a full _stream_interval.
+            if self._stop_event.wait(timeout=self._stream_interval):
+                break
+        self._stop_event.clear()
+
+    def _update_latency(self):
+        if not self._rtt_buffer:
+            return
+        samples = sorted(self._rtt_buffer)
+        median_rtt = samples[len(samples) // 2]
+        self.calibrated_latency_ns = median_rtt // 2
+        self._try_emit(self.calibration_changed, True)
+
+    def start_continuous_calibration(self):
+        """Probe every 5s after 3s initial delay. Updates latency after each sample."""
+        if self._continuous_calib_active:
+            return
+        self._continuous_calib_active = True
+        self._try_emit(self.log_message, "[Unity] Continuous calibration started (1 probe / 5s)")
+        time.sleep(3.0)
+        probe_n = 0
+        while self._running and self._device:
+            rtt = self._single_rtt(f"__calib_c{probe_n}__")
+            probe_n += 1
+            if rtt is not None:
+                self._rtt_buffer.append(rtt)
+                self._update_latency()
+                self._try_emit(self.log_message,
+                    f"[Unity] Probe: RTT={rtt/1e6:.1f}ms  "
+                    f"one-way={self.calibrated_latency_ns/1e6:.1f}ms  "
+                    f"(n={len(self._rtt_buffer)})"
+                )
+            time.sleep(5.0)
+        self._continuous_calib_active = False
+
+    def calibrate_for_recording(self):
+        """10 probes at 1s intervals. Uses whole buffer for final value."""
+        threading.Thread(target=self._record_calib, daemon=True).start()
+
+    def _record_calib(self):
+        self._try_emit(self.log_message, "[Unity] Record-start calibration (10 probes × 1s)...")
+        for i in range(10):
+            if not self._device:
+                break
+            rtt = self._single_rtt(f"__calib_r{i}__")
+            if rtt is not None:
+                self._rtt_buffer.append(rtt)
+            time.sleep(1.0)
+        self._update_latency()
+        self._session_latency_ns = self.calibrated_latency_ns
+        self._try_emit(self.log_message,
+            f"[Unity] Session latency locked: one-way={self._session_latency_ns/1e6:.1f}ms "
+            f"(n={len(self._rtt_buffer)} samples)"
+        )
+
+    # ── LSL ↔ Unity experiment-controller bridge: callback re-emitters ───────
+    # These run on whatever thread the modules call us from (receive thread,
+    # Timer worker). They only `emit()` Qt signals, which Qt marshals to the
+    # GUI thread so widgets can update safely.
+
+    def _on_subject_id_acked_cb(self, subject_id: int) -> None:
+        self._try_emit(self.subject_id_acked, subject_id)
+
+    def _on_subject_id_rejected_cb(self, result: HandshakeResult) -> None:
+        self._try_emit(self.subject_id_rejected, result)
+
+    def _on_subject_id_state_cb(self, state: HandshakeState) -> None:
+        self._try_emit(self.subject_id_state, state)
+
+    def _on_unity_ready_cb(self, info: dict) -> None:
+        self._try_emit(self.unity_ready, info)
+
+    def _on_exp_state_cb(self, state: SequencerState) -> None:
+        self._try_emit(self.exp_state, state)
+
+    def _on_cmd_done_cb(self, cmd) -> None:
+        # cmd is a _PendingCmd dataclass — opaque-typed for the signal so we
+        # don't expose private symbols across the boundary, but main_window
+        # can still read .seq / .result / .detail directly.
+        self._try_emit(self.cmd_done, cmd)
+
+    # ── Receive loop ──────────────────────────────────────────────────────────
+
+    def _listen(self):
+        while self._running:
+            try:
+                data, addr = self._sock.recvfrom(4096)
+                msg = data.decode("utf-8").strip()
+                self._handle(msg, addr[0])
+            except socket.timeout:
+                continue
+            except OSError:
+                break
+
+    def _handle(self, msg: str, src_ip: str):
+        # Log every non-DATA message from the connected device so we can trace the chain
+        if not msg.startswith("DATA,unity,") and not msg.startswith("HELLO"):
+            self._try_emit(self.log_message, f"[Unity] ← {src_ip}: {msg[:60]}")
+
+        if msg.startswith("HELLO,unity,"):
+            name = msg.split(",", 2)[2] if msg.count(",") >= 2 else src_ip
+            dev  = UnityDevice(ip=src_ip, name=name)
+            with self._scan_lock:
+                if not any(d.ip == src_ip for d in self._scan_results):
+                    self._scan_results.append(dev)
+                    self._try_emit(self.log_message, f"[Unity] Found: {dev.display_name}")
+                    self._try_emit(self.devices_found, list(self._scan_results))
+                    self._try_emit(self.scan_progress,
+                        f"Found {len(self._scan_results)} device(s): {name} [{src_ip}]"
+                    )
+
+            # If this HELLO is from our already-connected device (e.g. after domain
+            # reload), auto-send CONNECT to restore the handshake without user action
+            if self._device and src_ip == self._device.ip:
+                self._try_emit(self.log_message, f"[Unity] Known device reconnecting — sending CONNECT")
+                try:
+                    self._out.sendto(b"CONNECT", (src_ip, self._port))
+                except OSError:
+                    pass
+            return
+
+        if msg.startswith("CONNECTED"):
+            self._connect_event.set()
+            return
+
+        # RECONNECT is a connection-RESTORATION message — it must be allowed
+        # through even when self._device is None (because that's exactly the
+        # state it exists to recover from after a Unity domain reload). Handled
+        # here, ABOVE the source-IP gate, alongside HELLO/CONNECTED.
+        if msg.startswith("RECONNECT,"):
+            name = msg.split(",", 1)[1] if "," in msg else src_ip
+            dev  = UnityDevice(ip=src_ip, name=name)
+            self._device = dev
+            self._connect_event.set()
+            self._try_emit(self.status_changed, "connected")
+            self._try_emit(self.log_message, f"[Unity] Reconnected after domain reload: {dev.display_name}")
+            self.start_data_stream()   # resume streaming after reconnect
+            return
+
+        # SECURITY/INTEGRITY: After HELLO/CONNECTED/RECONNECT have had their
+        # chance, every remaining message MUST come from the connected device.
+        # Without this gate, any UDP source on the lab subnet sending "PING" or
+        # "ACK:..." or "DATA,unity,..." would be honored — cross-experiment
+        # contamination is possible on a shared subnet.
+        if self._device is None:
+            return  # unconnected — drop everything else
+        if src_ip != self._device.ip:
+            return
+
+        if msg.startswith("DATA,unity,"):
+            self.has_streaming_data = True
+            self._last_sample_ns = time.time_ns()
+            self._try_emit(self.data_received, msg)
+            return
+
+        if msg == "RECORDING_STARTED":
+            self._try_emit(self.log_message, f"[Unity] Recording started — triggering LSL recording")
+            self._try_emit(self.recording_started)
+            return
+
+        if msg == "RECORDING_STOPPED":
+            self._try_emit(self.log_message, f"[Unity] Recording stopped")
+            self._try_emit(self.recording_stopped)
+            return
+
+        if msg == "PING":
+            self._try_emit(self.log_message, f"[Unity] Ping trigger from {src_ip}")
+            self._try_emit(self.ping_requested)
+            return
+        elif msg in ("headset_doffed", "headset_donned", "app_quitting"):
+            # Quest lifecycle event — log AND emit a typed signal so the host
+            # can persist it into the syncLog (otherwise the gap reason is
+            # received by the operator and then thrown away).
+            self._try_emit(self.log_message, f"[Unity] {msg}")
+            self._try_emit(self.headset_state_changed, msg)
+            return
+        elif msg.startswith("ACK:"):
+            # Format: ACK:<ping_id> or ACK:<ping_id>:<unity_ns>
+            rest    = msg[4:]
+            parts_a = rest.split(":", 1)
+            ping_id   = parts_a[0]
+            unity_ns  = int(parts_a[1]) if len(parts_a) > 1 and parts_a[1].isdigit() else 0
+
+            # Unblock calibration waiter
+            with self._ack_lock:
+                entry = self._pending_acks.get(ping_id)
+            if entry:
+                entry[1].set()
+
+            # If this is a real ping ACK (not calibration), emit with Unity timestamp
+            if ping_id.startswith("ping_") and unity_ns > 0:
+                self._try_emit(self.unity_ack_received, ping_id, unity_ns)
+            return
+
+        # ── New: experiment-controller bridge dispatch ────────────────────
+        # Hand every remaining msg to the two new modules. Each handle_inbound
+        # returns True if it consumed the message; we stop at the first
+        # consumer. This must be AFTER the source-IP gate (above) so messages
+        # from rogue sources can't reach the modules, and BEFORE the
+        # "unrecognised message" log path (none currently — this is the tail
+        # of _handle). Order matters between the two:
+        #   1. SubjectIdHandshake handles SUBJECT_ID_ACK / SUBJECT_ID_REJECT
+        #   2. ExperimentController handles CMD_*, STATE, READY
+        # Both inspect a fixed prefix and return False when not theirs, so
+        # the order is for clarity, not correctness.
+        if self._subject_id.handle_inbound(msg):
+            return
+        if self._exp_controller.handle_inbound(msg):
+            return
+
+        # Anything that falls through here is a message from the connected
+        # Unity device that we don't recognise. Don't log noisily — this can
+        # happen during protocol upgrades. The receive_loop's existing log at
+        # the top of _handle already showed the message.

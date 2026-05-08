@@ -5,9 +5,12 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/A.01_MetaFrame/A.01_Template/Template Level.unity
-    guid: c4500310263070441be98c8e85243f6f
+    guid: c701cea257c6f7b4cad8316349a27931
+  - enabled: 1
+    path: Assets/B.01_Experiment/Restaurant.unity
+    guid: bb601b28c4cdb5249b6440ca7f378a58
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 3c87430cdb08dba41bbea8893e345b3a,
       type: 2}
@@ -23,3 +26,4 @@ EditorBuildSettings:
       type: 2}
     com.unity.xr.openxr.settings4: {fileID: 11400000, guid: 38035f40779746f488331742d33e192d,
       type: 2}
+  m_UseUCBPForAssetBundles: 0

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 5e160cbca73a0a84d82131af2465f047
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 255560
+  packageName: 'MeshFusion Pro : Ultimate Optimization Tool'
+  packageVersion: 1.3.1
+  assetPath: Assets/MeshFusionPro/Example/Packages/Viking Village/Models/Props/Materials/mat_boulder_01.mat
+  uploadId: 853444

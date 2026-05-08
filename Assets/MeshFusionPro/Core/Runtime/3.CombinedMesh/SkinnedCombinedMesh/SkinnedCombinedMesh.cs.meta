@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: bf30b60bfe09a3b46835105f9eb3727c
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 255560
+  packageName: 'MeshFusion Pro : Ultimate Optimization Tool'
+  packageVersion: 1.3.1
+  assetPath: Assets/MeshFusionPro/Core/Runtime/3.CombinedMesh/SkinnedCombinedMesh/SkinnedCombinedMesh.cs
+  uploadId: 853444

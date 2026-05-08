@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: BakeryProjectSettings
   m_EditorClassIdentifier: BakeryRuntimeAssembly::BakeryProjectSettings
   mipmapLightmaps: 0
-  format8bit: 0
-  formatHDR: 0
+  format8bit: 2
+  formatHDR: 1
   lightmapCompression: 0
   maxAssetMip: 100
   dirHighQuality: 1
